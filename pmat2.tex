@@ -1,0 +1,110 @@
+\documentclass[a4paper, hidelinks, 12pt]{article}
+\input{makra.tex}
+
+\begin{document}
+
+\begin{Large}
+    \textbf{pmat}
+    \hfill
+    2 zadanie domowe
+    \hfill
+    10.10.2024
+\end{Large}
+
+\rule{\textwidth}{1pt}
+
+\textbf{Zadanie 3D.}
+
+Niech $\mathcal{A} \in P(P(\mathbb{R}))$ będzie rodziną zbiorów spełniającą warunek
+\[
+(\forall B \in \mathcal{A})(\forall C \subseteq \mathbb{R})(C \subseteq B \rightarrow C \in \mathcal{A}).
+\]
+Wykaż, że
+\[
+\bigcup \mathcal{A} = \{z \in \mathbb{R} \mid \{z\} \in \mathcal{A}\}.
+\]
+
+\textbf{Rozwiązanie.}
+Chcemy udowodnić, że \[ (1)
+\bigcup \mathcal{A} \subseteq \text{Z} = \{z \in \mathbb{R} \mid \{z\} \in \mathcal{A}\} \land (2) \text{Z} \subseteq \bigcup \mathcal{A} \]
+
+(2) \( \forall z \in Z, \{z\} \in \mathcal{A}\) zatem \( z \in \bigcup \mathcal{A} \qed\)
+
+(1)\( ( \forall z \in \bigcup \mathcal{A} ) ( \exists B \in \mathcal{A}: z \in B) ( \exists C \subseteq \mathbb{R} : C = \{z\}) \). Wtedy \( C \subseteq B \) i z założeń zadania \( C \in \mathcal{A} \iff \{z\} \in \mathcal{A} \qed \) 
+
+\textbf{Zadanie 4D.} Przyjmijmy oznaczenie $A \triangle B = (A - B) \cup (B - A)$.
+\begin{itemize}
+    \item[(a)] Udowodnij, że operacja $\triangle$ jest łączna, tzn.
+    \[
+    A \triangle (B \triangle C) = (A \triangle B) \triangle C
+    \]
+    (i w związku z tym można pomijać nawiasy i pisać $A \triangle B \triangle C$).
+    
+    \item[(b)] Dane są liczba $n \in \mathbb{N}$ oraz zbiory $A_1, A_2, \ldots, A_n$ obiektów tego samego typu. Dla każdego $k \in \mathbb{N}$ niech $B_k$ będzie zbiorem tych $x$, które należą do dokładnie $k$ spośród zbiorów $A_1, A_2, \ldots, A_n$. Udowodnij, że
+    \[
+    A_1 \triangle A_2 \triangle \ldots \triangle A_n = \bigcup_{k \in \mathbb{N}} B_{2k+1},
+    \]
+    przeprowadzając dowód indukcyjny ze względu na $n$.
+\end{itemize}
+
+\textbf{Rozwiązanie.}
+\begin{itemize}
+\item [(a)]
+Rozważmy wszystkie przypadki $x \in A,B,C$ lub diagramy Venna:
+
+\includegraphics[width=\textwidth]{Venn .png}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$x\in A$ & $x \in B$ & $x\in C$ & $x\in (B \triangle C)$ & $x \in A \triangle(B\triangle C)$ & $x \in (A \triangle B)$ & $x\in (A\triangle B)\triangle C$  \\
+\hline
+1 & 1 & 1 & 0 & 1 & 0 & 1 \\
+\hline
+1 & 1 & 0 & 1 & 0 & 0 & 0 \\
+\hline
+1 & 0 & 1 & 1 & 0 & 1 & 0 \\
+\hline
+1 & 0 & 0 & 0 & 1 & 1 & 1 \\
+\hline
+0 & 1 & 1 & 0 & 0 & 1 & 0 \\
+\hline
+0 & 1 & 0 & 1 & 1 & 1 & 1 \\
+\hline
+0 & 0 & 1 & 1 & 1 & 0 & 1 \\
+\hline
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\end{tabular}
+
+Zauważmy, że $x \in A \triangle(B\triangle C) \iff x \in (A\triangle B)\triangle C $ (kolumna 5 jest równa kolumnie 7), zatem zbiory te są równe. $\qed$
+
+
+    % \item[(a)] Zauważmy, że $(*) A-(B-C) = (A - B - C) \cup (A \cap B \cap C)$
+
+    % $A \triangle (B \triangle C) = [A - (B \triangle C)] \cup [(B \triangle C) - A] = \left(A - [(B-C)\cup(C-B)]\right) \cup ([(B-C)\cup(C-B)]-A) = [A - (B-C) - (C-B)]\cup(B-C-A)\cup(C-B-A) = ([(A-B-C) \cup (A \cap B \cap C)] - (C-B))\cup(B-C-A)\cup(C-B-A) = ([(A-B-C)\cup(A \cap B \cap C)]-(C-B))\cup([(A-B-C) \cup (A \cap B \cap C)]\cap C \cap B)  $
+    
+    % $A \triangle B = (A \cup B) - (A \cap B)$, oraz  czyli $A \triangle (B \triangle C) = A \cup (B \triangle C) - A \cap (B \triangle C) = A \cup [(B \cup C ) - B \cap C] -  $ 
+    \item [(b)] 
+    \textit{baza indukcji:} Dla $n=1$ wszystkie elementy należą tylko do $A_1$, zatem należą dokładnie do 1 zbioru, a 1 jest nieparzyste. 
+
+    \textit{krok indukcji:} Jeśli dla  $A_1 \triangle A_2 \triangle \ldots \triangle A_n = \bigcup_{k \in \mathbb{N}} B_{2k+1}$ to dla $n+1$ $A_1 \triangle A_2 \triangle \ldots \triangle A_n \triangle A_{n+1} = \bigcup_{k \in \mathbb{N}} B_{2k+1}$. Niech $A = A_1 \triangle A_2 \triangle \ldots \triangle A_n$. Wtedy $x \in A \triangle A_{n+1} \iff (x \in A \land x \notin A_{n+1}) \lor (x \in A_{n+1} \land x \notin A)$
+    \begin{enumerate}
+        \item $x \in A \land x \notin A_{n+1}$ Wtedy z założenia indukcyjnego $x \in \bigcup_{k \in \mathbb{N}} B_{2k+1}$
+        \item $x \in A_{n+1} \land x \notin A$. Zauważmy, że skoro $A=\bigcup_{k \in \mathbb{N}} B_{2k+1}$ to $-A = \bigcup_{k \in \mathbb{N}} B_{2k}$. Wtedy, jeśli $x \in A_{n+1} \land x \notin A$ to $x \in -A \cap A_{n+1}$, zatem należy do nieparzystej liczby zbiorów.
+    \end{enumerate}
+    $\qed$
+\end{itemize}
+
+\textbf{zadanie*:}
+
+\includegraphics[width=0.8\textwidth]{Screenshot from 2024-10-10 23-21-39.png}
+
+\textit{\small creditsy: chyba reddit kiedyś dawno}
+
+
+
+
+
+
+\textit{Autor: Dominika Piętka}\\
+
+\end{document}
