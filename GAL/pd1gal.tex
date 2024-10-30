@@ -1,0 +1,366 @@
+\documentclass[]{sinol}
+
+
+\nazwa{praca domowa}
+\numer{1}
+\przedmiot{GAL}
+\autor{Dominika Piętka}
+\data{24.10.2024}
+
+\begin{document}
+
+    \begin{zadanie}
+        
+
+    Niech $n \in \mathbb{N}, n > 0$. Rozwiązać układ równań liniowych $n \times n$
+    \[
+       \begin{cases}
+            a_{1,1}x_1 + a_{1,2}x_2 + \dots + a_{1,n}x_n = b_1 \\
+            a_{2,1}x_1 + a_{2,2}x_2 + \dots + a_{2,n}x_n = b_2 \\
+            \vdots \\
+            a_{n,1}x_1 + a_{n,2}x_2 + \dots + a_{n,n}x_n = b_n
+        \end{cases}
+    \]
+    \( a_{i,j} = \binom{i}{j-1}, \quad b_i = 2^i \quad \text{dla} \quad i,j = 1,2,\dots,n.\)
+    Dla przykładu dla $n = 5$
+    \[
+    \begin{cases}
+        x_1 + x_2 = 2 \\
+        x_1 + 2x_2 + x_3 = 4 \\
+        x_1 + 3x_2 + 3x_3 + x_4 = 8 \\
+        x_1 + 4x_2 + 6x_3 + 4x_4 + x_5 = 16 \\
+        x_1 + 5x_2 + 10x_3 + 10x_4 + 5x_5 = 32
+    \end{cases}
+    \]
+    \textbf{Rozwiązanie.}
+        Zauważmy, że $\binom{n}{0} = 1$ dla dowolnego $k$, zatem $a_{i, 1} = 1$ dla każdego $i$, $\binom{n}{k} = 0$, gdy $k > n$, zatem $a_{i,j} = 0$ gdy $i < j-1$ oraz $\binom{n}{k} = \binom{n-1}{k-1}+\binom{n-1}{k}$ dla $k \geq 1$, czyli dla $j \neq 1 \quad  a_{i,j}=a{i-1,j-1}+a{i-1, j}$, a więc $a_{i,j}-a_{i-1, j} = a_{i-j}{j-1}$.
+
+        Macierzą powyższego układu jest 
+        \[
+         \begin{bmatrix}
+            a_{1,1} & a_{1,2} & \dots & a_{1,n} & 2^1 \\
+            a_{2,1} & a_{2,2} & \dots & a_{2,n} & 2^2 \\
+            \vdots \\
+            a_{n,1} & a_{n,2} & \dots & a_{n,n} & 2^n \\
+        \end{bmatrix}
+        \]
+
+        Dla dowolnego $i$:
+        \[
+         \begin{bmatrix}
+            \vdots \\
+            a_{i-1, 1} & \dots & a_{i-1,j} & \dots & a_{i-1, n} & 2^{i-1} \\
+            a_{i, 1} & \dots & a_{i,j} & \dots & a_{i, n} & 2^i \\
+            \vdots \\
+        \end{bmatrix} 
+        \xrightarrow{w_i-w_{i-1}}
+        \begin{bmatrix}
+            \vdots \\
+            a_{i-1,1} & a_{i-1,2} & \dots & a_{i-1,j} & \dots & a_{i-1, n} & 2^{i-1} \\
+            0 & a_{i-1,1} & \dots & a_{i-1,j-1} & \dots & a_{i-1, n-1} & 2^{i-1} \\
+            \vdots \\
+        \end{bmatrix} 
+        \]
+        Wykonajmy więc przekształcenie:
+        \(\forall_{2\leq i \leq n} \ w_i - w_{i-1}\). Otrzymamy macierz
+        \[
+        \begin{bmatrix}
+            a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} & \dots & a_{1,n-2} & a_{1, n-1} & a_{1,n} & 2 \\
+            0 & a_{1,1} & a_{1,2} & a_{1,3} & \dots & a_{1,n-3} & a_{1,n-2} & a_{1, n-1} & 2 \\
+            0 & a_{2,1} & a_{2,2} & a_{2,3} & \dots & a_{1,n-3} & a_{2,n-2} & a_{2, n-1} & 2^2 \\
+            \vdots \\
+            0 & a_{i-1,1} & a_{i-1,2} & a_{i-1,3} & \dots & a_{i-1,n-3} & a_{i-1, n-2}  & a_{i-1, n-1} & 2^{i-1} \\
+            \vdots \\
+            0 & a_{n-1,1} & a_{n-1,2} & a_{n-1,3} & \dots & a_{n-1,n-3} & a_{n-1, n-2}  & a_{n-1, n-1} & 2^{n-1} \\
+        \end{bmatrix}
+        \]
+        Wykonajmy analogiczne przekształcenie, tym razem dla \(\forall_{3\leq i \leq n} \ w_i - w_{i-1}\). Otrzymamy macierz
+        \[
+        \begin{bmatrix}
+            a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} & \dots & a_{1,n-2} & a_{1, n-1} & a_{1,n} & 2 \\
+            0 & a_{1,1} & a_{1,2} & a_{1,3} & \dots & a_{1,n-3} & a_{1,n-2} & a_{1, n-1} & 2 \\
+            0 & 0 & a_{1,1} & a_{1,2} & \dots &  a_{1,n-3} & a_{1,n-2} & a_{1, n-1} & 2 \\
+            \vdots \\
+            0 & 0 & a_{i-2,1} & a_{i-2,2} & \dots & a_{i-2,n-3} & a_{i-2, n-2}  & a_{i-2, n-1} & 2^{i-2} \\
+            \vdots \\
+            0 & 0 & a_{n-2,1} & a_{n-2,2} & \dots & a_{n-2,n-3} & a_{n-2, n-2}  & a_{n-2, n-1} & 2^{n-2} \\
+        \end{bmatrix}
+        \]
+
+        Następnie, po wykonaniu analogicznego przekształcenia: \(\forall_{k\leq i \leq n} \ w_i - w_{i-1}\) kolejno dla $k=4, k=5, \ \dots, \ k=n$ otrzymamy zeschodkowaną macierz:
+
+         \[
+        \begin{bmatrix}{}
+            a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} & \dots & a_{1,n-2} & a_{1, n-1} & a_{1,n} & 2 \\
+            0 & a_{1,1} & a_{1,2} & a_{1,3} & \dots & a_{1,n-3} & a_{1,n-2} & a_{1, n-1} & 2 \\
+            0 & 0 & a_{1,1} & a_{1,2} & \dots &  a_{1,n-4} & a_{1,n-3} & a_{1, n-2} & 2 \\
+            0 & 0 & 0 & a_{1,1} & \dots & a_{1,n-5} & a_{1, n-4}  & a_{1, n-3} & 2 \\
+            \vdots \\
+            0 & 0 & 0 & 0 & \vdots & 0 & a_{1,1} & a_{1,2} & 2 \\
+        \end{bmatrix}
+        \]
+        gdzie $i-ty$ wiersz ma postać: $\underbrace{0 \quad 0 \quad \dots \quad 0}_{i-1 \quad \text{zer}} \quad a_{1,1} \quad a_{1,2} \quad \dots \quad a_{1,n-(i-1)} \quad 2$. Zauważmy także, że $a_{1,1}=1, a_{1,2}=1 $ oraz $ a_{1,i}=0$ dla $i \geq 3$, tak więc macierz ta jest równoważna z 
+        \[
+        \begin{bmatrix}
+            1 & 1 & 0 & \dots & 0 & 0 & \dots & 0 & 0 & 2 \\
+            0 & 1 & 1 & \dots & 0 & 0 & \dots & 0 & 0 & 2 \\
+            \vdots \\
+            0 & 0 & 0 & \dots & 1 & 1 & \dots & 0 & 0 & 2 \\
+            \vdots \\
+            0 & 0 & 0 & \dots & 0 & 0 & \dots & 1 & 1 & 2 \\
+            
+        \end{bmatrix}
+        \]
+
+        Dodatkowo, operacja $w_{i-1}-w_{i}$ dla każdego $2\leq n$ daje równanie $x_i - x_{i+2} = 0 \iff x_i = z_i+2$. W ten sposób otrzymujemy $x_i = x_j \iff i \equiv j \mod{2}$. Z pierwszego wiersza wynika, że $x_1 + x_2 = 2$, czyli $x_2 = 2 - x_1$. W takim razie rozwiązaniem tego układu jest ciąg $x, 2-x, x, 2-x, \dots$ gdzie $x$ jest dowolną liczbą należącą do ciała $\K$, nad którym jest dany układ równań. Zatem
+        $$x_i = 
+        \begin{cases}
+            x & 2 \nmid i \\
+            2-x & 2 \mid i \\
+            \end{cases}$$
+    \end{zadanie}
+
+    \begin{zadanie}
+        Rozwiąż następujący układ równań liniowych w liczbach rzeczywistych w zależności od rzeczywistych parametrów \(t, s \in \mathbb{R}\):
+        \[
+        \begin{cases}
+        \begin{array}{ccc}
+            \hfill x_1 + t x_3 + s x_4 & = & 2, \\
+            \hfill x_1 + x_2 + x_3 + t x_4  & = & s, \\
+            \hfill x_1 + x_3 & = & t \\  
+        \end{array}
+        
+        \end{cases}
+        \]
+        Przedstaw kolejne kroki swoich obliczeń.
+
+        \textbf{Rozwiązanie.}
+        Zapiszmy macierz układu i wykonajmy następujące operacje:
+        \[
+        \begin{bmatrix}
+            1 & 0 & t & s & 2 \\
+            1 & 1 & 1 & t & s \\
+            1 & 0 & 1 & 0 & t \\
+        \end{bmatrix}
+        \xrightarrow[]{w_1 \leftrightarrow w_3}
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & t \\
+            1 & 1 & 1 & t & s \\
+            1 & 0 & t & s & 2 \\
+        \end{bmatrix}
+        \xrightarrow[]{w_2, w_3 - w_1}
+         \begin{bmatrix}
+            1 & 0 & 1 & 0 & t \\
+            0 & 1 & 0 & t & s-t \\
+            0 & 0 & t-1 & s & 2-t \\
+        \end{bmatrix}        
+        \]
+        \[
+        \xrightarrow[t\neq1]{w_3 \cdot \frac{1}{t-1}}
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & t \\
+            0 & 1 & 0 & t & s-t \\
+            0 & 0 & 1 & \frac{s}{t-1} & \frac{2-t}{t-1} \\
+        \end{bmatrix}
+        \xrightarrow[]{w_1-w_3} 
+        \begin{bmatrix}
+            1 & 0 & 0 & -\frac{s}{t-1} & t - \frac{2-t}{t-1} \\
+            0 & 1 & 0 & t & s-t \\
+            0 & 0 & 1 & \frac{s}{t-1} & \frac{2-t}{t-1} \\
+        \end{bmatrix}
+        \]
+
+        Wyznaczmy zmienną zależną $x_1$ z równania $1$:
+        $$ x_1 - \frac{s}{t-1} \cdot x_4 = t - \frac{2-t}{t-1} \iff x_1 = t - \frac{2-t+s\cdot x_4}{t-1} = \frac{t^2 - 2 + s\cdot x_4}{t-1} $$
+        Analogicznie wyznaczmy $x_2, x_3$
+        $$ x_2: \quad x_2 + t \cdot x_4 = s-t \iff x_2 = s - t\left( 1 + x_4\right)
+        $$
+        $$ x_3: \quad  x_3 + \frac{s}{t-1}\cdot x_4 = \frac{2-t}{t-1} \iff x_3 =  \frac{2-t}{t-1} - \frac{s}{t-1}\cdot x_4 = \frac{2-t-s\cdot x_4}{t-1}$$
+        Zatem rozwiązaniem dla $t \neq 1$ jest $( \frac{t^2 - 2 + s\cdot x_4}{t-1}, s - t\left( 1 + x_4\right), \frac{2-t-s\cdot x_4}{t-1}, x_4)$.
+
+        Rozważmy przypadek gdy $t=1$:
+        \[
+         \begin{bmatrix}
+            1 & 0 & 1 & 0 & t \\
+            0 & 1 & 0 & t & s-t \\
+            0 & 0 & t-1 & s & 2-t \\
+        \end{bmatrix}        
+        \Leftrightarrow
+         \begin{bmatrix}
+            1 & 0 & 1 & 0 & 1 \\
+            0 & 1 & 0 & 1 & s-1 \\
+            0 & 0 & 0 & s & 1 \\
+        \end{bmatrix}  
+        \xrightarrow[s \neq 0]{w_3 \cdot \frac{1}{s}}
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & 1 \\
+            0 & 1 & 0 & 1 & s-1 \\
+            0 & 0 & 0 & 1 & \frac{1}{s} \\
+        \end{bmatrix}  
+        \xrightarrow[]{w_2-w_1}
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & 1 \\
+            0 & 1 & 0 & 0 & s -\frac{1+s}{s} \\
+            0 & 0 & 0 & 1 & \frac{1}{s} \\
+        \end{bmatrix}  
+        \]
+        Zatem 
+        $$x_4 = \frac{1}{s}$$
+        $$x_2 = s -\frac{1+s}{s}$$
+        $$x_1 + x_3 = 1 \iff x_3 = 1-x_1$$
+        Czyli rozwiązaniem dla $t=1$ jest $(x_1, s -\frac{1+s}{s}, 1-x_1, \frac{1}{s})$.
+
+        Rozważmy ostatni przypadek, czyli $t=1 \land s=0$. Wtedy 
+        \[
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & t \\
+            0 & 1 & 0 & t & s-t \\
+            0 & 0 & t-1 & s & 2-t \\
+        \end{bmatrix}  
+        \Leftrightarrow
+        \begin{bmatrix}
+            1 & 0 & 1 & 0 & 1 \\
+            0 & 1 & 0 & 1 & -1 \\
+            0 & 0 & 0 & 0 & 1 \\
+        \end{bmatrix}        
+        \]
+        Ostatni wiersz pokazuje, że w takiej sytuacji układ jest sprzeczny, a więc nie ma rozwiązań.
+    \end{zadanie}
+
+    \begin{zadanie}
+        Znajdź współczynniki wielomianu \( w(x) = ax^2 + bx + c \in \mathbb{C}[x] \), który przyjmuje następujące wartości:
+        \[
+        w(1 + i) = 0, \quad w(2 - i) = 1 \quad \text{oraz} \quad w(1) = i.
+        \]
+
+        \textbf{Rozwiązanie.}
+        Przyjmijmy oznaczenia $a_1 = \Re a, a_2 = \Im a$, analogicznie dla $b, c$. W takim razie $$w(x) = (a_1+a_2i)x^2 + (b_1 + b_2i)x + (c_1 + c_2i)$$
+        Czyli:
+        $$w(i+1)=(a_1+a_2i)2i + (b_1 + b_2i)(1+i) + (c_1 + c_2i)=0$$
+        $$\Re w(i+1) = 0 = -2a_2 + b_1 - b_2 + c_1$$
+        $$\Im w(i+1) = 0 = 2a_1 + b_1 + b_2 + c_2$$
+        $$w(2-i)=(a_1+a_2i)(3-4i) + (b_1 + b_2i)(2-i) + (c_1 + c_2i)=1$$
+        $$\Re w(2-1) = 1 = 3a_1+4a_2+2b_1+b_2+c_1$$
+        $$\Im w(2-1) = 0 = -4a_1 + 3a_2 - b_1 + 2b_2+c_2$$
+        $$w(1)=(a_1+a_2i) + (b_1 + b_2i) + (c_1 + c_2i)=i$$
+        $$\Re w(2-1) = 0 = a_1 + b_1 + c_1$$
+        $$\Im w(2-1) = 1 = a_2 + b_2 + c_2$$
+
+        \[
+        \begin{cases}
+           \hfill  -2a_2 + b_1 - b_2 + c_1 & = 0 \\ 
+            \hfill 2a_1 + b_1 + b_2 + c_2 & = 0 \\
+              \hfill 3a_1+4a_2+2b_1+b_2+c_1 & = 1 \\
+              \hfill -4a_1 + 3a_2 - b_1 + 2b_2+c_2 & = 0 \\
+             \hfill a_1 + b_1 + c_1 & = 0 \\
+             \hfill a_2 + b_2 + c_2 & = 1 \\  
+        \end{cases}
+        \]
+
+        Macierzą tego układu jest 
+        \[
+        \begin{bmatrix}
+            0  & -2 &  1  & -1 & 1  & 0 & 0 \\
+            2  &  0 &  1  &  1 & 0  & 1 & 0 \\
+            3  &  4 &  2  &  1 & 1  & 0 & 1 \\
+            -4  &  3 & -1  &  2 & 0  & 1 & 0 \\
+            1  &  0 &  1  &  0 & 1  & 0 & 0 \\
+            0  &  1 &  0  &  1 & 0  & 1 & 1
+        \end{bmatrix}
+        \xrightarrow[]{w_2-2w_5, w_3-3w_5, w_4+4w_5,}
+        \begin{bmatrix}
+            0  & -2 &  1  & -1 & 1  & 0 & 0 \\ 
+            0  &  0 &  -1  &  1 & -2  & 1 & 0 \\
+            0  &  4 &  -1  &  1 & -2  & 0 & 1 \\
+            0  &  3 & 3  &  2 & 4  & 1 & 0 \\
+            1  &  0 &  1  &  0 & 1  & 0 & 0 \\
+            0  &  1 &  0  &  1 & 0  & 1 & 1
+        \end{bmatrix}
+        \]
+        \[
+        \xrightarrow[]{w_4-3w_6, w_3-4w_6, w_1+2w_6}
+        \begin{bmatrix}
+            0  & 0 &  1  & 1 & 1  & 2 & 2 \\ 
+            0  &  0 &  -1  &  1 & -2  & 1 & 0 \\
+            0  &  0 &  -1  &  -3 & -2  & -4 & -3 \\
+            0  &  0 & 3  &  -1 & 4  & -2 & -3 \\
+            1  &  0 &  1  &  0 & 1  & 0 & 0 \\
+            0  &  1 &  0  &  1 & 0  & 1 & 1
+        \end{bmatrix}
+        \xrightarrow[]{w_2+w_1, w_3+w_1, w_4-3w_1, w_5-w_1}
+        \]
+        \[
+        \begin{bmatrix}
+            0  & 0 &  1  & 1 & 1  & 2 & 2 \\ 
+            0  &  0 &  0  &  2 & -1  & 3 & 2 \\
+            0  &  0 &  0  &  -2 & -1  & -2 & -1 \\
+            0  &  0 & 0  &  -4 & 1  & -8 & -9 \\
+            1  &  0 &  0  &  -1 & 0  & -2 & -2 \\
+            0  &  1 &  0  &  1 & 0  & 1 & 1
+        \end{bmatrix}
+        \xrightarrow[]{w_3+w_2, w_4+2w_2, w_2*\frac{1}{2}, w_1-w_2, w_5+w_2, w_6-w_2}
+        \begin{bmatrix}
+            0  & 0 &  1  & 0 & 3/2  & 1/2 & 1 \\ 
+            0  &  0 &  0  &  1 & -1/2  & 3/2 & 1 \\
+            0  &  0 &  0  &  0 & -2  & 1 & 1 \\
+            0  &  0 & 0  &  0 & -1  & -2 & -5 \\
+            1  &  0 &  0  &  0 & -1/2  & -1/2 & -1 \\
+            0  &  1 &  0  &  0 & 1/2  & -1/2 & 0
+        \end{bmatrix}
+        \]
+        \[
+        \xrightarrow[]{w_4*-1, w_3-2w_4, w_1-3/2w_4, w_2+1/2w_4, w_5+1/2w_4, w_6-1/2w_4}
+        \begin{bmatrix}
+            0  & 0 &  1  & 0 & 0  & -5/2 & -13/2 \\ 
+            0  &  0 &  0  &  1 & 0  & 5/2 & 7/2 \\
+            0  &  0 &  0  &  0 & 0  & 5 & 11 \\
+            0  &  0 & 0  &  0 & 1  & 2 & 5 \\
+            1  &  0 &  0  &  0 & 0  & 1/2 & 3/2 \\
+            0  &  1 &  0  &  0 & 0  & -3/2 & -5/2
+        \end{bmatrix}
+        \]
+        \[
+        \xrightarrow[]{w_3*1/5, w_1+5/2w_3, w_2-5/2w_3, w_4-10w_3, w_5-5/2w_3, w_6+3/2w_3}
+        \begin{bmatrix}
+            0  & 0 &  1  & 0 & 0  & 0 & 4/5 \\ 
+            0  &  0 &  0  &  1 & 0  & 0 & 2/5 \\
+            0  &  0 &  0  &  0 & 0  & 1 & -2 \\
+            0  &  0 & 0  &  0 & 1  & 0 & 1 \\
+            1  &  0 &  0  &  0 & 0  & 0 & 11/5 \\
+            0  &  1 &  0  &  0 & 0  & 0 & 3/5
+        \end{bmatrix}
+        \]
+
+        Zatem $w(x) = (\frac{2}{5}+\frac{4}{5}i)x^2 + (-1-2i)x+(\frac{3}{5}+\frac{11}{5}i)$.
+    \end{zadanie}
+    \begin{zadanie}
+        
+    \end{zadanie}
+\pagebreak
+    \begin{zadanie}
+        Rozważamy wielomiany zmiennej zespolonej.
+        \begin{itemize}
+\item[(a)] Znajdź wielomian \( f(z) \) o całkowitych współczynnikach, którego jedynymi pierwiastkami są pierwiastki pierwotne z 1 stopnia 24.
+\item[(b)] Przedstaw powyższy wielomian jako iloczyn wielomianów nierozkładalnych na \( \mathbb{R} \).
+\end{itemize}
+
+\textit{Przypomnienie: Liczba \( z \in \mathbb{C} \) jest pierwiastkiem pierwotnym z 1 stopnia \( n \) wtedy i tylko wtedy, gdy \( z^n = 1 \) oraz \( z^m \neq 1 \) dla \( 0 < m < n \).}
+
+\textbf{Rozwiązanie.}
+Rozważmy wielomian $w_{24}(x)=x^{24} - 1$. Zauważmy, że pierwiastki pierwotne stopnia $24$ z jedności są pierwiastkami tego wielomianu. Oprócz tego, jego pierwiastkami są pierwiastki $12$ stopnia oraz $8$ stopnia, w szczególności pierwiastki $4$ stopnia są pierwiastkami zarówno $12$ jak i $8$ stopnia. W takim razie, aby uzyskać wielomian, którego jedynymi pierwiastkami są pierwiastki pierwotne stopnia $24$, należy wielomian $w(x)$ podzielić przez wielomian, którego pierwiastkami są pierwiastki stopnia $12$ z jedności, oraz przez wielomian którego pierwiastki to pierwiastki stopnia $8$, które nie są pierwiastkami stopnia $4$, gdyż te zostały już uwzględnione jako jedne z pierwiastków stopnia $12$.
+
+Wielomian, którego jedynymi pierwiastkami są pierwiastki $12$ stopnia z $1$ jest $w_{12}(x)=x^{12}-1$. Pierwiastkami wielomianu $w_8(x)=x^8-1$ to pierwiastki $8$ stopnia z $1$, z kolei pierwiastkami $w_4(x)=x^4-1$ są pierwiastki $4$ stopnia. Zatem pierwiastkami $\frac{w_8}{w_4}$ są te pierwiastki $8$ stopnia, które jednocześnie nie są pierwiastkami $4$ stopnia. 
+$$f(x)=w_{24} \cdot \frac{1}{w_{12}} \cdot \frac{w_4}{w_8} = \frac{(x^{24}-1)(x^4-1)}{(x^{12}-1)(x^8-1)} = \frac{(x^{12}-1)(x^{12}+1)(x^4-1)}{(x^{12}-1)(x^4-1)(x^4+1)} = \frac{x^{12}+1}{x^4+1} = x^8 -x^4 + 1$$
+
+Niech $z=\cos \frac{\pi}{12} + i \sin \frac{\pi}{12}$. Jest to najmniejszy pierwiastek pierwotny z jedności stopnia $24$ oraz $|z|=1$. Kolejne pierwiastki pierwotne to $z^5, z^7, z^{11}, z^{13}, z^{17}, z^{19}, z^{23}$. Zauważmy, że $\conj{z}=z^{23}, \conj{z^5}=z^{19}, \conj{z^7}=z^{17}, \conj{z^{11}}=z^{13}$. Poza tym $z, \conj{z}$ są pierwiastkami trójmianu kwadratowego postaci $(x-z)(x-\conj{z}) = x^2 - x (\Re z) + {|z|}^2$. Zatem możemy zapisać
+$$f(x) = (x-z)(x-\conj{z})(x-z^5)(x-\conj{z^5})(x-z^7)(x-\conj{z^7})(x-z^{11})(x-\conj{z^{13}})$$
+$$f(x)=(x^2-x(\Re z)+1)(x^2-x(\Re z^5)+1)(x^2-x(\Re z^7)+1)(x^2-x(\Re z^{11})+1)$$
+Ze wzorów de Moivre'a $z^n = \cos \frac{\pi n}{12} + i \sin \frac{\pi n}{12}$, zatem $\Re z^n = \cos \frac{\pi n}{12}$, więc
+$$f(x)=(x^2-x\cos\frac{\pi}{12}+1)(x^2-x\cos\frac{5\pi}{12}+1)(x^2-x\cos\frac{7\pi}{12}+1)(x^2-x\cos\frac{11\pi}{12}+1)$$
+Każdy z wielomianów w tym iloczynie ma współczynniki w $\R$, ale jest nierozkładalny w $\R$.
+
+\[
+\includegraphics[width=0.5\textwidth]{IMG_1453.jpeg}
+\]
+    \end{zadanie}
+\end{document}
