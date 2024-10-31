@@ -1,8 +1,0 @@
-*.e
-*.a
-*.o
-test.txt
-output.txt
-
-zbior_ary.c
-zbior_ary.h
