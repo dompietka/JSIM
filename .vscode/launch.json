@@ -2,6 +2,19 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "ArrayRearrangement",
+      "request": "launch",
+      "mainClass": "lab03.ArrayRearrangement",
+      "projectName": "JSIM_bb8960e3"
+    },
+    {
+      "type": "java",
+      "name": "VectorStream",
+      "request": "launch",
+      "mainClass": "lab03.VectorStream"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
