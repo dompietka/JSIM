@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MatrixRowSums",
+      "request": "launch",
+      "mainClass": "lab04.MatrixRowSums",
+      "projectName": "JSIM_bb8960e3"
+    },
+    {
+      "type": "java",
       "name": "ArrayRearrangement",
       "request": "launch",
       "mainClass": "lab03.ArrayRearrangement",

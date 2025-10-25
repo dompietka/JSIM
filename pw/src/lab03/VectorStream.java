@@ -44,11 +44,11 @@ public class VectorStream {
 static class VectorWorker implements Runnable {
         private final int index;
         private final int[] vector;
-        private final int prev_sum;
+        private final int[] prev_sum;
         private final CyclicBarrier barrier;
         private final int streamLength;
 
-        VectorWorker(int index, int[] vector, int prev_sum, CyclicBarrier barrier, int streamLength) {
+        VectorWorker(int index, int[] vector, int[] prev_sum, CyclicBarrier barrier, int streamLength) {
             this.index = index;
             this.vector = vector;
             this.prev_sum = prev_sum;
@@ -61,7 +61,7 @@ static class VectorWorker implements Runnable {
             try {
                 for (int vectorNo = 0; vectorNo < streamLength; vectorNo++) {
                     // obliczamy wartość elementu wektora
-                    vector[index] = vectorDefinition.applyAsInt(prev_sum, index);
+                    vector[index] = vectorDefinition.applyAsInt(prev_sum[0], index);
 
                     // czekamy na pozostałe wątki i potem barrier action
                     barrier.await();
@@ -72,14 +72,16 @@ static class VectorWorker implements Runnable {
         }
     }
 
-    static class BarrierAction implements Runnable {
-        private final int vectorNo;
-        private final int[] vector;
 
-        BarrierAction(int vectorNo, int[] vector) {
-            this.vectorNo = vectorNo;
-            this.vector = vector;
-        }
+   private static void computeVectorStreamInParallel() throws InterruptedException {
+        int[] vector = new int[VECTOR_LENGTH];
+        int[] prev_sum = {0}; // przechowuje sumę poprzedniego wektora
+        int[] vector_nr = {0}; //to są tablice jednoelementowe, 
+        //żeby można było je modyfikować w klasie wewnętrznej, 
+        //wtedy "final" sie tyczy wskaznika na tablice, a nie jej zawartosci
+
+        final class BarrierAction implements Runnable {
+        
 
         @Override
         public void run() {
@@ -87,25 +89,15 @@ static class VectorWorker implements Runnable {
             for (int x : vector) {
                 sum += x;
             }
-            System.out.println(vectorNo + " -> " + sum);
+            System.out.println(vector_nr[0] + " -> " + sum);
+            prev_sum[0] = sum;
+            vector_nr[0]++;
         }
+        //akcja bariery wykonuje sie jako jedyny watek, wiec nie ma problemu z dostepem do wektora i sumy
     }
 
-   private static void computeVectorStreamInParallel() throws InterruptedException {
-        final int[] vector = new int[VECTOR_LENGTH];
-        int prev_sum = 0; // przechowuje sumę poprzedniego wektora
-        int vector_nr = 0;
-
         // Barrier action sumuje wektor i wypisuje wynik
-        CyclicBarrier barrier = new CyclicBarrier(VECTOR_LENGTH, () -> {
-            int sum = 0;
-            for (int x : vector) sum += x;
-            prev_sum = sum;
-            //p(mutex)
-            System.out.println(vector_nr + " -> " + sum);
-            vector_nr++;
-            //v(mutex)
-        });
+        CyclicBarrier barrier = new CyclicBarrier(VECTOR_LENGTH, new BarrierAction());
 
         Thread[] threads = new Thread[VECTOR_LENGTH];
         for (int i = 0; i < VECTOR_LENGTH; i++) {
