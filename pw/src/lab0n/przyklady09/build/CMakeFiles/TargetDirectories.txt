@@ -1,0 +1,11 @@
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/err.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/child-pipe.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/parent-pipe.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/parent-dup.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/child-fifo.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/parent-fifo.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/pipeline-utils.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/pipeline.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/pipeline-tester.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/edit_cache.dir
+/home/dominika/JSIM/pw/src/lab0n/przyklady09/build/CMakeFiles/rebuild_cache.dir

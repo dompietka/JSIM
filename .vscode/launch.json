@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MatrixRowSumsPooled",
+      "request": "launch",
+      "mainClass": "MatrixRowSumsPooled",
+      "projectName": "JSIM_bb8960e3"
+    },
+    {
+      "type": "java",
+      "name": "MatrixRowSumsPooled",
+      "request": "launch",
+      "mainClass": "lab05.MatrixRowSumsPooled",
+      "projectName": "JSIM_bb8960e3"
+    },
+    {
+      "type": "java",
       "name": "MatrixRowSums",
       "request": "launch",
       "mainClass": "lab04.MatrixRowSums",

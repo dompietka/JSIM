@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wall -Wextra -Wno-sign-compare -rdynamic CMakeFiles/pipeline-tester.dir/pipeline-tester.c.o -o pipeline-tester  liberr.a libpipeline-utils.a 

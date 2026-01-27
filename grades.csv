@@ -1,0 +1,565 @@
+Email,Punkty,Komentarz
+k.baldyga8@student.uw.edu.pl,"1,5","""1. Ok, są tylko drobne usterki rachunkowe (czasem gdzieś zgubił się minus przy przepisywaniu)
+3. BR"""
+m.bednorz@student.uw.edu.pl,"9,5","""1. a) OK b) brak uzasadnienia czemu $s+7 = 0$ przy przejściach, drobne błędy rachunkowe (w prawym górnym rogu zniknęła jedna liczba)
+3. Dobrze
+5. W podpunkcie c) w przypadku, gdy b jest różne od 0 przestrzeń W także opisuje się dwoma rówananiami – drugie z nich to x4+(b-2)x1-bx3=0
+7. ok"""
+d.bialczynsk@student.uw.edu.pl,0,"""3. BR"""
+j.bialynicka@student.uw.edu.pl,2,"""1. a) układ nigdy nie jest sprzeczny b) zabrakło rozwiązania
+2. nie ma podpunktu b)
+3. Podpunkt a) ma błędy rachunkowe. Pozostała część zadania nie zawiera komentarza, przez co jest nieczytelna."""
+b.bibrowski@student.uw.edu.pl,"8,9","""1. OK
+2. w b) powinno być 16/16 \pi zamiast 18/16 \pi
+3. Rozwiązanie jest bardzo niechlujne. Co jest bazą V? Wektor \alpha'_1 nie należy do V. 
+4. b) wyszlo Panu 1 - 2 = -2, błąd rachunkowy prowadzi do błędnego wyznaczenia b. c) wektor jest poprawny, argumentacja jest niemożliwa do odczytania
+7. bardzo nieczytelne, czym jest suma prosta na wektorach?? (przy inerpretacji jako zwykłej sumy rozwiązanie ok), ten iloczyn wektorowy tam też nie powinien się pojawić """
+jm.biedrzyck@student.uw.edu.pl,"4,7","""1. OK
+3. BR
+4. c) V rozważa się jako podprzestrzeń R^4, więc pytanie ""wektor nie z V"" jest odnośnie R^4. 
+5. Proszę dokładniej opisywać rozwiązania. Zachęcam też do używania Latexa. W podpunkcie b) chyba mała pomyłka obliczeniowa – wymiar V+W powinien wyjść 3 dla b=-1 I 4 dla b różnego od -1"""
+jw.bielecka@student.uw.edu.pl,"6,9","""1. a) OK b) w drugim przypadku baza powinna mieć 2 wektory - nie może w niej być wektora (0,1,0,0,0) jeśli $x_2=0$
+3. Dobrze
+4. a) OK b) Zeschodkowała Pani macierz nie do końca (chociaż tam jest drobny błąd rachunkowy na tym etapie), dalej Pani wypisuje d-5 = -2 (Na jakiej podstawie) i jeszcze parę równości idących znikąd."""
+sp.bielen@student.uw.edu.pl,"5,2","""3. Podpunkt a) dobrze. Podpunkt b) jest niepełny i nieczytelny.
+4. a) ten układ co Panu wyszedł nie opisuje W, w tym się można upewnić podstawiając np wektory z W. Dlaczego tak wyszlo Pan zrozumie kiedy odpowie sobie na pytanie co oznaczają zmienne x1, x2, x3, x4(to są akurat wspołczynniki szukanego układu). b) Skąd mamy b+8 = 7 c) Poprawna odpowiedź ale słaba argumentacja dlaczego
+6. brakuje jednoznaczności w b)"""
+a.bogdan6@student.uw.edu.pl,"5,3","""1. OK
+2. zbiór D nie został narysowany
+3. Ostatnie dwa zdania na stronie 5. zawierają błędną implikację."""
+w.bogucka2@student.uw.edu.pl,8,"""1. a) nie, ten układ nie jest sprzeczny, nigdy. Macierz albo ma wiersz zerowy, albo tworzy równanie $x_2 = 0$ b) brakuje drugiej bazy
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+5. W podpunkcie a) nie rozumiem co oznaczają wypisane układy równań ze zmiennymi x_i? Także odpowiedź dla przypadku a\neq 3 powinna być inna – wówczas przestrzeń V można opisać jednym równaniem. W podpunkcie b) nie wystrarczy sprawdzić, że wektory rozpinające W nie należą do V (bo jakiś inny wektor z W mógłby należeć do V) – takie podejście doprowadziło zresztą Panią do sprzeczności, bo w jednym z przypadków wyszło Pani że dim(V+W)=5, co oczywiście jest niemożliwe. Podpunkt c) jest ok"""
+lm.bryk@student.uw.edu.pl,"8,1","""1. OK
+3. Dobrze
+4. b) z tym, że b=-1 nie ma sprzeczności, po prostu u powinno być -3, a Pani wyszło -1 dlaczegoś. Poza tym wszystko szło dobrze. 
+5. W podpunkcie a) wypisane równania nie opisują przestrzeni V – macierze wyszły dobre, ale ich interpretacja jest inna, bo wiersze macierzy nie zadają układu równań, lecz wiersze te są wektorami rozpinającymi przestrzeń V. W punkcie b) nie rozumiem dlaczego sprawdza Pani tylko czy (1,5,3,0) należy do W – przecież w V leży wiele innych wektorów (I one mogłyby należeć do przecęcia V I W). Punkt c) wygląda ok. Proszę dokładniej opisywać rozwiązania. Zachęcam do używania Latexa"""
+kw.budzyn@student.uw.edu.pl,8,"""1. OK
+3. BR
+4. OK
+5. Rozwiązania są ok. Zachęcam do używania Latexa"""
+m.bugala2@student.uw.edu.pl,"5,5","""1. a) OK b) wiersze macierzy nie stanowią bazy przestrzeni rozwiązań układu
+3. Wektory są wpisane w złej orientacji, przez co rozwiązanie jest niepoprawne. Zeschodkowanie takiej macierzy wyznacza wymiar przestrzeni, ale nie ma tego wniosku w pracy.
+4. Bardzo dobre rozwiązanie
+5. Podpunkt a) ok"""
+i.bujnowski@student.uw.edu.pl,0,"""3. BD"""
+z.charzynska@student.uw.edu.pl,"1,1","""1. Schodkowanie macierzy OK, zabrakło reszty rozwiązania
+2. Te obliczenia do niczego nie prowadzą
+3. Rozwiązanie a) ma błędy rachunkowe. Rozwiązanie b) jest błędne.
+4. a) I gdzie układ? Rachunki które widzę do poprawnej odpowiedzi raczej nie prowadzą. b) To ""rozwiązanie"" ignoruje wszystkie pomysly i fakty algebry liniowej o których Pani musi wiedzieć z wykładów. c) Argumentacja? """
+h.chmielews2@student.uw.edu.pl,8,"""1. Ok, w dwóch miejscach się tylko minus zjadł - w jednym czysty błąd przy przepisywaniu, w drugim zmienił znak jednego współczynnika wektora w bazie.
+2. nie ma podpunktu b)
+3. Dobrze
+4. Ale w punkcie b) wypada wyraźnie napisać a=3, b=-1 i tylko wtedy jest zawieranie. W c) widać do czego Pani zmierza, parę slów na boku jednak nie zaszkodzi
+5. Podpunkt a) wygląda ok W podpunkcie b), przypadku a \neq-3 z macierzy nie wynika równanie x3=0 (I dlatego przecięcie V I Z ma wymiar 2) Podpunkt c) ok"""
+jm.chomiak@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. c) układ wektorów jest lnz, a nie naodwrót, ponieważ całe rozwiązanie jest dobre uznalem to za literówkę
+7. okay"""
+m.cubrzynska@student.uw.edu.pl,"8,8","""1. a) OK b) gdzie drugi przypadek?
+3. W podpunkcie b) baza jest błędnie wyznaczona.
+4. a), b) OK c) Nie rozważa Pani przypadek poza a=0, chociaż ten sam przykład tam zadziała. 
+5. Podpunkt a) wygląda ok W podpunkcie b) przy obliczaniu V+W pomyłka obliczeniowa (przy wyliczaniu w4-w5) wymiar dla b=-1 powinien wyjść 3. Podpunkt c) ok"""
+r.czajkowsk2@student.uw.edu.pl,"7,8","""1. a) OK b) drobne błędy rachunkowe
+3. W podpunkcie b) rozpatrzony tylko jeden przypadek.
+4. a) Pisze Pan x2 = x3/3 - 2x4/3. Zgubiony minus przed x2 co prowadzi do błędu w wyznaczeniu układu opisującego W. b) OK c) Co za macierz Pan shodkuje? Nie rozumiem jej postaci i sensu. 
+5. W podpunkcie a) nie rozumiem dlaczego po otrzymaniu zeschodkowanych macierzy przechodzimy jeszcze przez jakieś dodatkowe równania ze zmiennymi s I t – to chyba niepotrzebny krok. Nastąpiła chyba jakaś pomyłka obliczeniowa – dla a=-3 w drugim równaniu zabrakło przy x1 powinien być współczynnik -5/2. W podpunkcie b) podobnie drobna pomyłka obliczeniowa (przy obliczaniu w5-2w2 dla macierzy V+W). Punnkt c) ok"""
+ai.czaplinsk@student.uw.edu.pl,"4,5","""1. a) OK b) wiersze macierzy nie stanowią bazy przestrzeni rozwiązań, należy jeszcze rozwiązać ten układ. Ponadto pojawiły się poważne błędy rachunkowe, które zredukowały dodatkowy wiersz macierzy (nie był on redukowalny)
+3. Brak podpunktu b).
+4. a) I gdzie jest wypisany układ? b) Warunek na zawieranie jednej przestrzeni liniowej w drugiej napewno tak nie wygłąda. c) brak"""
+j.dabkowska4@student.uw.edu.pl,"9,7","""1. OK
+3. Dobrze
+4. a,c) - OK b) Pomysl na rozwiązanie jest super, zdarzyły się błędy rachunkowe przy obliczeniu b, a.
+6. ok"""
+m.dolata2@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Ten Lemat co Pan udowodnił nie jest jakimś znanym faktem z wykładów? W każdym razie, bardzo dobre rozwiązanie. 
+6. ok"""
+j.dorosinski@student.uw.edu.pl,0,"""3. BR"""
+kj.drela@student.uw.edu.pl,8,"""1. OK
+3. Brak podpunktu b).
+4. OK
+6. a) ok"""
+b.duszynski@student.uw.edu.pl,0,"""3. BR"""
+d.figurski@student.uw.edu.pl,0,"""2. Wysłane zostały tylko treści zadań
+3. BR
+5. Zdaje się że załączono zły plik?"""
+o.flasinska@student.uw.edu.pl,0,"""3. BR"""
+k.fraczek7@student.uw.edu.pl,"8,5","""1. OK
+3. Podpunkt b) jest niepełny.
+4. OK
+5. W podpunkcie a) drobna pomyłka obliczeniowa (przy obliczaniu w2-5w1). Oblizcenie dim(V+W) w podpunkcie b) ok"""
+z.gaca@student.uw.edu.pl,"9,3","""1. OK
+3. Dobrze
+4. b) Pani sprawdza rzeczy, które są znanymi faktami z wykładów. Nie jest źle, po prostu nie musi Pani tracić na to czas podczas egzaminu albo kolokwium. Nie udało się zauważyć warunek b=-1. Żeby V zawierała się w W ważne nie tylko, żeby miała mniejszy wymiar, np to może być podrzestrzeń wymiaru 1, ktora jest oparta na wektorze nie leżącym w W. c) Gdzie argumentacja? """
+r.galinski@student.uw.edu.pl,0,"""3. BR"""
+p.ganczarczy@student.uw.edu.pl,"9,8","""1. OK, modulo brakujące minusy w wypisywaniu przypadków
+3. Dobrze
+4. c) dlaczego tylko przypadek a = 3
+6. ok, bardzo nieczytelne"""
+wh.gasior@student.uw.edu.pl,0,"""3. BR"""
+h.glab@student.uw.edu.pl,"5,8","""1. a) OK b) wiersze macierzy nie rozpinają przestrzeni rozwiązań, należy jeszcze rozwiązać ten układ równań
+3. Baza to układ wektorów, a nie przestrzeń.
+4. a) Dostał Pan zupełnie nie to, dlaczego rozwiązanimi równań tego układu muszą być wektory z W? Jak to było użyte w rozwiązaniu? b) Same schodkowanie macierzy bez zadnego wyjaśnienia to nie jest rozwiązanie zadania. Poza tym wynik też nie jest prawdziwy. c) dobrze"""
+j.glowaczews@student.uw.edu.pl,"4,2","""1. a) błąd rachunkowy, układ nigdy nie jest sprzeczny b) brakuje drugiego przypadku
+2. niepełne rozwiązanie podpunktu b)
+3. BR
+4. a) Skąd się bierze x_5? Układ od samego początku należy szukać od początku w inny sposób, więc za ten punkt 0. b) Wybrany sposób jest trudny do sprawdzania i dlatego pojawiły się błędy rachunkowe. 
+5. W podpunkcie a) pomyłka obliczeniowa – dlaczego nagle w pierwszej kolumnie pojawiły się same zera (Proszę dokładnie zapisywać przejścia między kolejnymi macierzami)? Również z otrzymanej macierzy źle odczytano układ równań – wiersze macierzy nie opisują równań, lecz wektory rozpinające przestrzeń V. W podpunkcie b) również sporo pomyłek obliczeniowych I znowu z uzyskanych macierzy wyciągnięte nieprawidłowe wnioski (np. przy dim(V+W) należało rozważyć przypadki b=1 lub a=-3). Proszę dokładniej opisywać rozwiązania – nie jestem pewien czemu odpowiada macierz Z w podpunkcie c)
+6. cos n\alpha = 0 nie znaczy ze \alpha = 0, np cos 30 \neq 0, ale cos 30*12 = 0, punkty są za 1 połowę b)  """
+m.gontarczyk@student.uw.edu.pl,0,"""3. BR"""
+fj.gorski2@student.uw.edu.pl,"7,9","""1. OK
+2. powinno być z_15 zamiast z_13
+3. Wektory w b) są nieczytelne.
+4. OK
+6. wygląda bardzo jak z chata, wnioski z tw poprawne ale ewidentnie nie wiesz co to za twierdzenie i jak działa"""
+t.grabowski6@student.uw.edu.pl,0,"""3. BR"""
+m.gradzik2@student.uw.edu.pl,0,"""3. BR"""
+aa.grajda@student.uw.edu.pl,7,"""1. OK
+2. W a) jest tylko 1/4 zbioru D
+3. Dobrze
+4. OK"""
+a.grau@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. OK"""
+f.grochal@student.uw.edu.pl,"6,2","""1. a) OK b) w pierwszym przypadku zamieniły się ostatnie współrzędne w wektorach
+3. BR
+4. Doceniam krótkie rachunki, ale doszło do tego, że w punkcie b) nic na temat parametru a nie jest powiedziane, chociaż mógł Pan to mieć na myśli. Treba bardziej uzasadniać rachunki. 
+6. a) ok
+7. zdecydowanie za słabo uzasadnione """
+mg417883@students.mimuw.edu.pl,9,"""1. a) OK b) Nie zapisujemy baz jako macierzy, brakuje wyraźnie wskazanej bazy
+3. Dobrze
+4. a) odemując 3W_3 od W_2 miał Pan dostać 7x_1 a nie 3x_1 co prowadzi do tego, że uklad opisujący nie jest poprawny. b)  """
+a.grodecki@student.uw.edu.pl,"6,5","""1. a) ale pierwszy współczynnik ostatniego wiersza zależy od s b) OK
+2. b) jest źle z tego co jest napisane w rozwiązaniu wynika że do D należy więcej elementów niż jest pierwiastków 16 st. z 1
+3. Podpunkt a) dobrze. W podpunkcie b) baza jest wyznaczona błędnie. Rozwiązanie jest niepotrzebnie bardzo skomplikowane, przez co bardzo nieczytelne. Co oznacza ≡1?
+4. OK
+6. a) ok, w b) dzieją się dziwne rzeczy, na pewno brakuje jednoznaczności """
+tf.gruszecki@student.uw.edu.pl,"6,8","""1. OK
+3. BR
+4. b) Brakuje komentarza, który by wyjaśnił czytelnikowi, dlaczego np rzad maciezy dla V musi być równy 2. 
+5. Podpunkt a) ok. W podpunkcie b) obliczenia dotyczące dim(V+W) były chyba poprawne, ale został wyciągnięty zły wniosek – w szczególnosci nie jest możliwe, by r(A)=5, bo przestrzeń jest 4-wymiarowa – błąd polega na tym, że w ostatecznej macierzy wiersz w2 można wyzerować przy pomocy wiersza w3.
+6. bardzo niepoprawna interpretacja względnej pierwszości """
+s.hajderek@student.uw.edu.pl,0,"""3. BR"""
+k.halaszko@student.uw.edu.pl,"1,5","""1. a) OK b) brakuje drugiego przypadku
+3. BR"""
+sj.haliniak@student.uw.edu.pl,1,"""3. BR
+6. a) ok"""
+f.hansdorfer@student.uw.edu.pl,"9,5","""1. OK
+3. W podpunkcie b) nie bardzo wiadomo co to jest a, b, c. Nie ma też wyznaczonej odpowiedniej bazy.
+6. ok
+7. poprawnie, ale przydałoby się trochę dokładniej rozpisać dowód """
+kj.ignaczak@student.uw.edu.pl,"8,8","""1. a) OK b) błędy rachunkowe przy wyznaczaniu baz
+2. brakuje m=0 i powinno być 12 zamiast 16 w b)
+3. BR
+4. Bardzo dobre rozwiązanie
+5. Podpunkty a,c) ok. W podpunkcie b) przy obliczaniu wymiaru V przeciętego z Z należałoby jeszcze uzasadnić, że równania w otrzymanych układach równań są niezależne.
+6. ok"""
+a.igras2@student.uw.edu.pl,"8,6","""1. a) OK b) A co z przypadkiem $s \neq -7$? Powina wyjść wtedy przestrzeń wymiaru 2
+2. pierw z 1 o argumencie 34/16 \pi nienależy do D
+3. W podpunkcie a) nie ma wskazanej bazy V.
+4. c) Jak się wiążą dwie linijki napisane przez Pani? Nie mówię, że tak pisać jest źle, ale trzeba przedstawiać nie tylko rachunki ale jescze pomysl, kluczowa idea z której wszystko idzie. 
+6. poprawnie, ale zamiast \gamma = \alpha \beta powinno być \gamma ^ mn = .."""
+n.ivashchenk@student.uw.edu.pl,9,"""1. OK
+3. Baza w b) jest błędnie wyznaczona.
+4. Bardzo dobre rozwiązanie
+5. W podpunkcie a) macierz zeschodkowana poprawnie, ale wyciągnięte złe wnioski. Wiersze macierzy nie opisują układu równań na V, lecz bazę V. Podpunkty b,c) ok"""
+j.izdebski4@student.uw.edu.pl,0,"""3. BR"""
+kt.jahn@student.uw.edu.pl,"9,5","""1. OK
+3. Dobrze
+4. OK
+5. W podpunkcie a) dla a=-3 powinno wyjść jeszcze jedno równanie – x_3=3x_1-2x_4. Proponuję używać notacji macierzowej – jest bardziej czytelna. W podpunkcie b) zdaje się mała pomyłka obliczeniowa – dim(V+W)=3 tylko w przypadku b=-1"""
+ms.jankowski@student.uw.edu.pl,"7,4","""1. a) OK b) są chyba błędy rachunkowe, proszę zmieniać nazwy plików, bo nie mogłem się doszukać gdzie te 2 liczby przeskoczyły
+3. Brak podpunktu b).
+4. a),b) - ciężko było znaleźć rozwiązania w tej formie jak Pan wysłał, ale są OK. c) Skoro Pan daje wektor z R^5 i jescze bez zadnej argumentacji to za ten popunkt wyżej zera stawić nie można. 
+5. W b) mała pomyłka obliczeniowa (zdaje się że przy obliczaniu w5-w1) – wymiar dim(V+W) jest równy 3 dla b=-1 i 4 dla pozostałych przypadków. Nie widzę też obliczeń dotyczących wymiaru części wspólnej V i Z – zachęcam do używania Latexa, lub przynajmniej załączania zdjęć w pliku pdf."""
+k.januszkie2@student.uw.edu.pl,0,"""3. BR"""
+m.jarmoc3@student.uw.edu.pl,"9,5","""3. Dobrze
+4. Bardzo dobre rozwiązanie
+5. Punkt a) ok. W punkcie b) rozwiązanie byłoby poprawne (A nawet powiedziałbym bardzo dobre), gdyby nie jedna istotna rzecz – jeśli przecięcie V i Z jest opisywane przez trzy rówania to wymiar tej przestrzeni jest równy 4-3=1, a nie 3 tak jak Pan napisał. Punkt c) ok, tylko tak informacyjnie dodam komentarz odnoście notacji – kiedy piszemy symbol zawierania to raczej mamy na myśli, że jeden zbiór jest zawarty lub równy drugiemu zbiorowi (nie zależnie, czy pod symbolem znajduje się kreska, czy nie). Aby zaznaczyć, że zawieranie jest ścisłe kreskę u dołu przekreśla się.
+6. Ok
+7. bardzo ładnie spisany dowód """
+mj.jaroszewi@student.uw.edu.pl,0,"""3. BR"""
+p.jasniewski@mimuw.edu.pl,0,""""""
+si.jaworski@student.uw.edu.pl,"6,5","""1. OK - jest literówka, przy przepisywaniu 5 zmieniło się na 3 w ostatecznej odpowiedzi
+2. D nie został narysowany, w b) brakuje 2 pierwiastków
+3. Podpunkt b) jest niewidoczny na zdjęciu.
+4. a) Pan pisze x2 - 3x3 - 7x1 = 0. To jest chyba literówka, ponieważ dalej układ wypisany bez błędu. Nie odejmuje w takim razie nic, bo całość po za tym jest dobrze. """
+t.jedlinski@student.uw.edu.pl,0,"""3. BR"""
+s.julke@student.uw.edu.pl,"9,5","""1. OK
+3. Dobrze
+4. OK
+5. Wyniki dobre, jednak proszę dokładniej opisywać i uzasadniać rozwiązania – np. W punkcie b) wartoby wyjaśnić skąd bierzemy układ równań, nie widzę też w tym podpunkcie uzasadnienia dlaczego wymiar przecięcia V i Z jest taki a nie inny. Proszę też wyraźnie zapisywać jaka jest odpowiedź (tego zwłaszcza brakowało mi w punkcie c))."""
+fm.jurkowski@student.uw.edu.pl,0,"""3. BR"""
+g.kaczmarek2@student.uw.edu.pl,0,"""3. BR"""
+mn.kapustka@student.uw.edu.pl,"7,2","""1. OK
+2. Dobrze wyznaczony zbiór, źle narysowany
+3. Podpunkt b) jest niepełny.
+4. a) Błąd rachunkowy w wyznaczeniu równania, wyszlo 7x+y-z zamiast 7x+y-3z co prowadzi do błędów w punkcie b). c) dobra odpowiedź, ale troche rachunków potwierdzających argumentację nigdy nie szkodzi.
+6. a) ok"""
+k.karwik@student.uw.edu.pl,0,"""3. BR"""
+m.kaszkowiak@student.uw.edu.pl,9,"""1. a) dobry wniosek, ale uzasadnienie błędne b) OK
+3. W podpunkcie b) dopisywanie ""b.s.o."" jest niepotrzebne i błędne. Kiedy szukamy konkretnej bazy to tracimy ogólność rozumowania.
+4. OK
+5. W punkcie a) macierz i wymiar wyszły dobre, jednak należało znaleźć układ równań opisujący V. Reszta ok. Proszę tylko dokładniej opisywać rozwiązania – tak aby się nie trzeba było domyślać co Pan ma na myśli np. Gdy Pan pisze 1+1=2 w punkcie c)..."""
+m.kazmierc11@student.uw.edu.pl,"0,5","""3. BR
+5. W punkcie a) macierz wyszła ok, ale inaczej się ją interpretuje – jej wiersze nie opisują układu równań, lecz wektory które ją rozpinają. Także uwaga notacyjna – jeżeli M jest macierzą to piszemy r(M) aby oznaczyć rząd macierzy, nie zaś dim(M), bo dim - czyli wymiar - dotyczy przestrzeni liniowych. W punkcie b) nie jest prawdą, że przecięcie V i W jest puste (A nawet gdyby było, to należałoby to jakoś uzasadnić), nie widzę też obliczeń dotyczących wymiaru przecięcia V i Z. W punkcie c) odpowiedź jest nie prawidłowa – nie wystarczy sprawdzić czy któryś z wektorów bazy W należy do Z (Do Z może należeć jakaś ich kombinacja)."""
+t.kazmierows@student.uw.edu.pl,"5,4","""1. OK
+2. 1+i nie zostało wzięte pod uwagę a ono obraca nam zbiór D
+3. W podpunkcie b) nie ma wyznaczonej bazy.
+4. a) Wektory z W nie spełniają podanego układu. b),c) OK"""
+t.kepa2@student.uw.edu.pl,0,"""3. BR"""
+s.kluszewski@student.uw.edu.pl,"3,5","""1. a) dlaczego? b) OK
+2. jeśli z ma argument \alpha to z^4 ma argument 4\alpha, to nie zostało wzięte pod uwagę przez to niepoprawnie wyznaczony zbiór D w a)
+3. W a) są błędy rachunkowe. Rozwiązanie nie ma komentarzy, przez co rozumowanie jest bardzo nieczytelne.
+5. Podpunkt a) ok. Podpunkt b) też ok, choć przy obliczaniu wymiaru przecięcia V i Z wartoby dodać jakieś uzasadnienie – zwłaszcza że użyta metoda jest nieco niestandardowa (Można było np. sprawdzić że wyliczone przez Pana wektory bazy przecięcia V I Z rzeczywiście należą zarówno do V jak i do Z. Podpunkt c) ok"""
+p.kocianski@student.uw.edu.pl,"5,5","""1. a) OK b) nie ma rozwiązania
+3. BR
+5. W podpunkcie c) przestrzeń W jest zawarta w V dla b=2 – żeby W była podprzestrzenią V to wcale nie musi mieć tego samego wymiaru co V. Poza tym rozwiązanie bardzo ładne.
+6. a) ok"""
+b.kodym@student.uw.edu.pl,0,"""3. BR"""
+m.kolasinsk4@student.uw.edu.pl,0,"""3. BR"""
+z.kolowacik@student.uw.edu.pl,"5,5","""1. a) OK b) obie przestrzenie powinny mieć wymiary o 1 większe, wkradło się kilka poważnych błędów przy przepisywaniu równań
+3. Nie można napisać (1,2,3,3)=(0,1,t,0) bez zaznaczenia, że są to współrzędne w różnych bazach. t nie może być równe 0.
+4. a) W ramach przypadku b=-2 wektor (1,5,4,-2) nalezy do W, więc musi spełniać układ podany przez Pani a tak nie jest. Niech Pani zauważy, ze układ podany dla b nie równego -2 dostateczny jako odpowiedź w tym zadaniu. b) b=-1 jest dobrze, natomiast a policzone niepoprawne. 
+5. Punkt a) ok, choć nie było potrzeby oddzielnego sprawdzania przypadku a=3. Punkt b) ok – tu także przy obliczaniu dim(V+W) nie było potrzeby rozważania oddzielnie przypadków a=0 I a \neq 0. Wiersze w któych występowało a można było usunąć wierszem w3. Niestety brak podpunktu c)"""
+mk448280@students.mimuw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Wzorcowe rozwiązanie
+5. Super rozwiązanie! Podziwiam też pięknego Latexa"""
+d.kondraciuk3@student.uw.edu.pl,0,"""3. BR"""
+d.konopski@student.uw.edu.pl,"6,5","""1. a) OK b) wiersze macierzy nie stanowią bazy przestrzeni rozwiązań, należy jeszcze rozwiązać ten układ
+2. Nie można dzielić nierówności przez cosinus bo nie znamy jego znaku
+3. W b) nie ma pełnego uzasadnienia i podanej bazy.
+6. ok
+7. ok"""
+a.kontsevenk@student.uw.edu.pl,"8,5","""1. OK
+3. W a) nie ma podanej bazy, a w b) baza jest wyznaczona źle, i tylko dla jednego t.
+4. a) strona 5, przejscie od przedostatniej linijki do ostaniej - rachunkowy błąd, zgubił się minus. b) OK c) za mało argumentacji 
+5. Ładne rozwiązanie!"""
+mt.koscielec@student.uw.edu.pl,0,"""1. Nie wiem skąd ta treść, ale to złe zadanie
+3. BR"""
+p.kosek@student.uw.edu.pl,0,"""2. to nie te zadania
+3. Złe zadania.
+4. Chyba Pan pomylił się skrzynkami do oddania prac
+5. Zdaje się że załączono zły plik?"""
+b.kotowska4@student.uw.edu.pl,"7,5","""1. OK - w b) zgubił się jeden minus
+3. Brakuje wektora \alpha_4.
+4. Praca jest dobrze wykonana, ale sposób przekazania danych do sprawdzenia wymusza ścigać milion plików i zmianę rozszeżenia każdego z tych plików ręcznie. To jest brak szacunku dla sprawdzającego. 
+5. W podpunkcie a) drobna pomyłka dla przypadku a=-3 (Zdaje się źle przepisana macierz z poprzedniej strony). W podpunkcie b) nie widzę rozważonego przypadku a=-3 przy obliczaniu wymiaru przecięcia V i Z. Podpunkt c) ok, choć może wartoby trochę dokładniej opisać rozwiązanie – tzn. Dodać choć krótki komentarz co i dlaczego się oblicza. Zachęcam też do oddawania prac domowych w formacie pdf."""
+a.kowalik12@student.uw.edu.pl,"3,3","""1. a) Dla $s = -7$ (zgubił się minus) też jest niesprzeczny b) gdzie się podział drugi przypadek?
+2. nie ma prawie żadnych wyliczeń w a), tylko odpowiedź (która jest poprawna), nie ma wyliczeń w b) i nie wiadomo co oznaczają z_i które są podane jako odpowiedź, nie jest to nigdzie wyjaśnione
+3. Ostatni wektor jest źle przepisany. Natomiast przyjmując przepisany wektor jako poprawny podpunkt a) jest dobrze. W podpunkcie b) nie ma pełnego uzasadnienia, jest tylko jeden przypadek.
+5. Podpunkt a) ok. Pozostałych podpunktów niestety nie widzę. Zachęcam do przesyłania rozwiązań w formacie pdf."""
+il.kowalska@student.uw.edu.pl,"8,5","""1. a) błędy rachunkowe b) OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+5. Podpunkt a) ok W podpunkcie b) przy obliczaniu wymiaru V przeciętego z W trafiła się pomyłka obliczeniowa, ale mam przypuszczenie, że też niesłusznie założyła Pani że w przypadku alpha_1 i alpha_2 mogą być dowolne (Choć tego nie jestem pewien, ze względu na nieco pogmatwany zapis rozwiązania w tym miejscu). Co do wymiaru przecięcia V i Z– wektory v1+2v2, oraz v3 są liniowo zależne gdy a=-3, dlatego w tym wypadku wymiar jest równy 1. Podpunkt c) ok. Proponuję korzystać z macierzy przy rozwiązywaniu zadań – to pomoże uniknąć błędów np. Takich jak w podpunkcie b)
+6. w b) brakuje dowodu jednoznaczności 
+7. Suma teoriomnogościowa to nie jest suma prosta """
+mm.kowalsk17@student.uw.edu.pl,0,"""3. BR"""
+a.koziara@student.uw.edu.pl,0,"""3. BR"""
+f.kozieradzk@student.uw.edu.pl,"2,5","""1. a) Ok b) Ok - jest tylko literówka w 3. wektorze bazowym: powinno być 1/5 zamiast 1/2, wcześniej liczby były dobre - błąd przy przepisywaniu
+3. Podpunkt b) jest źle."""
+k.krajewsk10@student.uw.edu.pl,"8,67","""1. OK
+3. Dobrze
+4. a) Ciężko znaleźć błąd, ponieważ rachunki od samego zera w tym punkcie są sprzeczne. Układ nie jest poprawny, dlatego że np wektor z W (0,3,1,-2) nie spełnia żadnego z równań. b) Mam wrażenie, że Pan wiedział poprawne odpowiedzi, ponieważ błędne podstawiniea, do błędnego układu z błędnymi rachunkami i tak dają prawdziwe odpowiedzi, co jest kompletnie niemożliwe. c) OK
+7. ok"""
+i.kruszewski@student.uw.edu.pl,0,"""3. BR"""
+j.krzanowski@student.uw.edu.pl,9,"""1. OK
+3. Podpunkt b) niepełny i nieczytelny.
+4. OK"""
+k.kuczynski6@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. OK
+5. Ładne rozwiązanie!"""
+km.kulak@student.uw.edu.pl,0,"""3. BR"""
+j.kurdej@student.uw.edu.pl,0,"""3. BR"""
+a.kurdybelsk@student.uw.edu.pl,0,"""3. BR"""
+pk.kurowska@student.uw.edu.pl,0,"""1. Zabrakło rozwiązania, schodkowanie niedokończone
+3. Rozwiązanie jest niestety złe. Brak komentarzy sprawia pracę bardzo nieczytelną. Duża ilość mało znaczących obliczeń jest niepożądana w rozwiązaniach.
+4. Zbyt mało i co więcej niepoprawnie, żeby dać cokolwiek poza zerem"""
+p.kurpeta@student.uw.edu.pl,"4,5","""1. a) OK b) wiersze macierzy nie są bazą przestrzeni rozwiązań układu
+3. W zadaniu dane są wektory rozpinające, a nie układ równiań. Wektor nie może być równy przestrzeni liniowej. Podpunkt b) jest bardzo nieczytelny.
+4. a) Wziął Pan wektor (0,3,-1, 2) zamiast (0,3,1,-2) co prowadzi do błędów w wyznaczeniu układa rozpinającego W. b) Totalnie nie rozumiem Pana rachunków, a poza tym odpowiedź jest daleka od prawdy. c) Wektor (0,0,0,0,1) nie leży nawet w R^4. Co więcej, dlaczegoś sprobuję Pan wypisać ten wektor jako kombinację liniową wektorów z R^4. 
+5. W podpunkcie a) zdaje się, że jakieś błędy obliczeniowe (Nie jestem wstanie stwierdzić gdzie dokładnie, bo zdjęcie jest dość niewyraźne – tu zachęcam do spisywania rozwiązań w Latex’u). W podpunkcie b) również błędy obliczeniowe. Dodam też, że przy wyznaczaniu dim(V+W) nie trzeba było rozważać osobno przypadku a=0 – ten wiersz można było usunąć przy pomocy wiersza w3. Punkt c) ok, choć żeby sprawdzić czy W jest zawarte w Z wystarczyło sprawdzić czy wektory rozpinające W są zawarte w Z."""
+j.kusz@student.uw.edu.pl,0,"""3. BR"""
+b.kwiatkows2@student.uw.edu.pl,"8,5","""1. a) Dlaczego? b) OK
+3. Dobrze
+4. OK
+5. Podpunkt a) ok. W podpunkcie b) przy obliczaniu wymiaru V przeciętego z W dla przypadku a\neq 3 należało skorzystać z twierdzenia K-C – skoro rząd macierzy otrzymanej z równań tej przestrzeni wyszedł 2, to wymiar przecięcia V i W jest równy 4-2=2, a nie 1. Podpunkt c) ok"""
+s.kwiatkows3@student.uw.edu.pl,"4,17","""1. OK
+3. Brak podpunktu b).
+4. Zrobiony całkowicie punkt a, za to 1/3 od max oceny. 
+5. W podpunkcie a) macierze zostały wyznaczone poprawnie, ale ich interpretacja jest inna – wiersze macierzy to wektory będące bazą przestrzeni, a nie równania które ją opisują. W podpunkcie b) dim(V+W) wyszło poprawnie."""
+z.lamecka@student.uw.edu.pl,"7,5","""1. a) błąd rachunkowy, ten układ nigdy nie jest sprzeczny b) OK
+3. W podpukncie b) nie ma wskazanej konkretnej bazy.
+4. a) Co wspólnego te rachunki(całkowicie oparte na wektorach z V) mają wspolnego do układu opisującego W.
+5. W podpunkcie a) macierze wyszły dobre, baza dla przypadku a=-3 przestrzeni V też została zapisana poprawnie, w drugim przypadku zabrakło jednego wektora z bazy. Jednak nie widzę zapisanych równań na przestrzeń V – a to przecież ich wyznaczenie było treścią zadania. W podpunkcie b) należało wyznaczyć wymiar przecięcia V i Z, ale poza tym metoda rozwiązania wygląda dobrze."""
+w.lapacz@student.uw.edu.pl,"9,9","""1. OK
+2. brakuje jednego pierwiastka w b)
+3. Dobrze
+4. OK
+5. Ładne rozwiązanie! Jedynie w podpunkcie c) przydałby się krótki komentarz, że przecięcie W i Z jest niezerowe."""
+a.laziuk4@student.uw.edu.pl,"7,3","""1. OK
+2. Wyznaczony dobry zbiór, ale źle narysowany, przez to odpowiedź w punkcie b) jest zła
+3. Dobzre
+4. OK
+5. W podpunkcie a) macierze wyszły dobre, ale wypisany układ równań nie jest rozwiązaniem zadania, bo zależy od r – należało rozpatrzeć dwa przypadki: a=-3, oraz a \neq -3. Podpunkt b) niedokończony. Brak podpunktu c)."""
+j.lubieniec2@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+5. Podpunkt a) ok. W podpunkcie b) przy obliczaniu dim(V+W) nie trzeba było oddzielnie rozważać przypadku a=0 – odjęcie wiersza zerowego od pewnego wiersza też jest operacją dozwoloną (Bo po jej wykonaniu macierz po prostu się nie zmienia). Punkt c) ok"""
+m.makei@student.uw.edu.pl,0,"""3. BR"""
+m.makowski17@student.uw.edu.pl,"6,55","""1. Do momentu rozważania $s = -7$ było bardzo dobrze, później odbyły się jakieś dzikie operacje i w macierzy nagle ubyło liczb... Dla ostatecznych wartości w macierzy reszta jest dobrze, ale nie można zapominać o współczynnikach we wcześniejszych kolumnach, jak się schodkuje macierz.
+2. źle wyznaczony D, nie można dzielić nierówności przez cos jeśli nie znamy jego znaku, powinniśmy rozważać kąt 4\alpha bo mamy z^4
+3. W a) jest błąd rachunkowy.
+4. a) w układzie x4 z minusem, to jest bład. Musi być z poprzednich rachunków inny znak. b) 
+6. bardzo niezytelnie i mało formalne uzasanieniea, ale poprawnie"""
+ws.malinowsk@student.uw.edu.pl,0,"""3. BR"""
+ms.marchewk2@student.uw.edu.pl,0,"""3. BR"""
+a.matyja4@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie"""
+am.mazur10@student.uw.edu.pl,"3,17","""1. a) OK b) wiersze macierzy nie stanowią bazy przestrzeni rozwiązań, należy jeszcze rozwiązać ten układ
+2. Dzielenie w nierówności przez cos4\alpha niepoprawne bo nie wiemy jakiego znaku jest
+3. Brak podpunktu b).
+4. a) Sprawdziłem, że Pani układy są poprawne, ale musiałem je wypisać jawnie, robiąc trochę pracy za Pani. To jest bardzo blizko do stwierdzenia, że zadanie nie jest zrobione do końca. 
+5. Macierze wyszły dobre, ale należało jeszcze zapisać rówania opisujące V."""
+a.medrzak@student.uw.edu.pl,"5,5","""1. OK
+2. źle wyznaczone D, 1+i nie zostało wzięte pod uwagę
+3. BR
+4. OK
+5. Podpunkt a) ok. W podpunkcie b) przy wyznaczaniu wymiaru przecięcia V i Z nie wystarczy spawdzić, że wektory bazowe do niego nie należą – należeć może jakaś ich kombinacja liniowa (Tak się w istocie dzieje dla a \neq -3). Punkt c) ok
+6. przede wszystkim zupełnie nie tak korzysta się z argumentów - ta ""niepewność"" postaci 2k\pi jest czescią argumentu, np cos \alpha = cos (\apha + 6\pi), a w tym rozwiązaniu sie zadziało dużo dziwnych, niepoprawnych rzeczy"""
+p.michalik3@student.uw.edu.pl,0,"""3. BR"""
+m.miniewicz2@student.uw.edu.pl,10,"""1. OK
+3. Nie ma potrzeby sprawdzać, czy baza jest liniowo niezależna, bo to zachodzi z definicji.
+4. Bardzo dobre rozwiązanie"""
+k.miturski@student.uw.edu.pl,0,"""3. BR"""
+o.nagorka@student.uw.edu.pl,"1,5","""1. a) błąd obliczeniowy, w lewym dolnym rogu powinno wyjść -1 i wtedy układ nigdy nie jest sprzeczny b) OK
+3. W zadaniu dane są wektory rozpinające, a nie układ równiań."""
+p.nguyen3@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+5. Ładne rozwiązanie!"""
+d.nguyentien@student.uw.edu.pl,0,"""3. BR"""
+m.nielaczny@student.uw.edu.pl,"4,5","""1. OK
+3. W a) są błędy rachunkowe."""
+m.nitczynski@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+6. ok"""
+p.nowakowsk9@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. OK
+6. git
+7. ok"""
+i.oblakowska@student.uw.edu.pl,"7,5","""1. OK
+3. Baza w b) jest źle wyznaczona. Warunki wektorów nie są spełnione. Wektor zerowy nigdy nie jest wektorem z bazy.
+4. Bardzo dobre rozwiązanie
+6. a) jesteśmy w liczbach zespolonych a nie rzeczywistych więc z nie musi być 1 lub -1, b) nie możesz sobie tak o domnazac ułamka, gdyby nie było mianownika to domnożenie byłoby ok, brakuje uzasadnienia jednoznaczności """
+n.okla@student.uw.edu.pl,0,"""3. BR"""
+j.olkowski4@student.uw.edu.pl,0,"""3. BR"""
+k.omieliancz@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+7. bardzo ładna struktura rozwiązania, aż przyjemnie się czyta"""
+rk.ostrowski@student.uw.edu.pl,0,"""3. BR"""
+z.ozimkowska@student.uw.edu.pl,"4,5","""1. OK
+2. nie ma podpunktu b)
+3. W b) nie ma wskazanej bazy."""
+s.pancewicz@student.uw.edu.pl,0,"""3. BR"""
+k.pasinski@student.uw.edu.pl,"3,75","""1. a) OK b) W zależności od s powinny wyjść różne liczby wektorów w bazie
+2. rozwiązanie poprawne tylko w I ćwiartce
+3. BR
+7. ok"""
+mm.pawlik4@student.uw.edu.pl,0,"""3. BR"""
+p.peczak@student.uw.edu.pl,6,"""1. OK - trochę tylko pogubiły się minusy przy wypisywaniu przypadków
+3. Dobrze"""
+j.piekarska8@student.uw.edu.pl,"3,7","""1. OK
+2. dobry początek, niedokończone zadanie
+3. Podpunkt a) dobrze.
+4. a) brak b) Rachunki wzięte znikąd, żadnego wyjaśnienia dlaczego c) odpowiedź jest poprawna, ale rachunki w c) są tak abstrakcyjne i randomowe, że ciężko znaleźć chociaż by minimalny związek z tą odpowiedzią. """
+ap448450@students.mimuw.edu.pl,"6,5","""1. a) Układ nigdy nie jest sprzeczny b) błędy rachunkowe przy wyznaczaniu baz
+2. Re((1+i)z^4) =\sqrt(2)*|z|^4cos(4*\alpha+\pi/4) dalej wszystko jest źle
+3. Dobrze
+4. a) kiedy odejmuje Pani wiersz W1 miało wyjść 3b+10 w dolnej linijce, co pociągnęlo za sobą błąd rachunkowy w ostatecznej odpowiedzi w punkcie t a. 
+6. równanie z b) nie ma jednoznacznych rozwiązań. Raczej stosujemy nazwę tożsamość Bezouta a nie algorytm euklidesa, i oznaczenie n mod m zamiast %"""
+kp.pisarek2@student.uw.edu.pl,0,"""3. BR"""
+k.plachtej@student.uw.edu.pl,5,"""1. OK
+3. Podpunkt a) dobrze."""
+s.plust@student.uw.edu.pl,"7,5","""1. OK
+3. Błąd przy przepisaniu bazy w a).
+4. Bardzo dobre rozwiązanie
+5. Podpunkt c) ok, w podpunkcie b) wymiar przecięcia V i Z też się zgadza. Reszty podpunktów nie widzę rozwiązanych."""
+r.polak@student.uw.edu.pl,0,"""3. BR"""
+a.pregowski@student.uw.edu.pl,0,"""3. BR"""
+w.proc@student.uw.edu.pl,0,"""3. BR"""
+l.prochniak2@student.uw.edu.pl,0,"""3. BR"""
+am.przybylik@student.uw.edu.pl,0,"""3. BR"""
+a.przychodze@student.uw.edu.pl,"7,5","""1. OK
+3. W b) co to jest v_1, v_2, v_4? Nie ma czytelnie wskazanej konkretnej bazy.
+6. stasznie nieczytelnie, zwłaszcza na zdjęciu
+7. w treści była suma teoriomnogościowa, a to rozwiązanie dotyczy sumy prostej, to dwie różne rzeczy"""
+f.pustavitau@student.uw.edu.pl,7,"""1. OK
+3. W a) nie ma wyznaczonej bazy. W b) nie ma uzasadnienia, ani wyznaczonej bazy i jest nieczytelne.
+4. a) w układzie Pan pisze ""-(b+10)"" chociaż linijkę wyżej miał Pan poprawnie ""-(b+10/3)"" c) chociaż by jedna linijka argumentacji była by ok, sama poprawna odpowiedź to bardzo mało
+5. W podpunkcie a) drobna pomyłka obliczeniowa (W przypadku a=-3 przy obliczaniu w1-5/2 w3 - powinien wyjść inny układ równań). W podpunkcie b) przy wyznaczaniu wymiaru V przeciętego z Z – nie wystarczy sprawdzić, które wektory z bazy V należą do Z – również jakaś ich kombinacja może do Z należeć (Tak się w istocie dzieje dla a\neq -3). Podpunkt c) ok"""
+m.rachwalska@student.uw.edu.pl,"6,8","""1. OK
+2. Wyznaczono tylko 1/4 zbioru D
+3. W a) jest błąd rachunkowy, drugi wektor z bazy nie należy do V. W b) brakuje uzasadenienia, że dla t=0 nie ma takiej bazy.
+4. с) dlaczego tylko przypadek a=3? 
+5. Podpunkt a) ok. W podpunkcie b) przy wyznaczaniu wymiaru V przeciętego z W – nie wystarczy sprawdzić, które wektory z bazy W należą do V – również jakaś ich kombinacja może do V należeć. Punkt c) ok"""
+d.radeckis@student.uw.edu.pl,0,"""3. BR"""
+ko.rudzki@student.uw.edu.pl,8,"""3. Dobrze
+4. OK
+5. W punkcie a) pomyłka obliczeniowa przy wyznaczaniu w2*(-1/2), ale dalsze rozwiązanie podpunktu jest ok. W podpunkcie b) wyznaczenie dim(V+W) ok. Reszty podpunktu b), oraz podpunktu c) nie widzę. Proszę przesyłać rozwiązania zadań w formacie pdf.
+6. a) ok"""
+mt.rymkiewic@student.uw.edu.pl,0,"""3. BR"""
+z.rzeczyca@student.uw.edu.pl,"4,9","""1. OK
+3. W b) brak wyznaczonej bazy dla każdego t.
+4. Wszystko dobrze, brak c)"""
+a.sadowicz@student.uw.edu.pl,"8,8","""1. OK
+2. D nie został narysowany
+3. Dobrze
+4. OK
+6. a) ok"""
+465119@wz.uw.edu.pl,0,"""3. BR"""
+j.skalany@student.uw.edu.pl,0,"""3. BR"""
+g.smejda@student.uw.edu.pl,0,"""3. BR"""
+b.sobczyk2@student.uw.edu.pl,0,"""3. BR"""
+ms.sochacki@student.uw.edu.pl,"7,8","""1. OK
+2. te obliczenia do nieczego nie prowadzą
+3. Proszę nie zmuszać sprawdzających do zgadywania poprawnego rozszerzenia pliku, który Pan wysłał. Rozwiązanie jest mało czytelne.
+4. -0,2 za brak argumentacji w punkcie c)
+5. Wyniki ok, choć rozwiązania dość nieczytelne, dobrze byłoby je trochę dokładniej opisać/uzasadnić ich poprawność zwłaszcza, że użyty sposób rozwiązania jest raczej niestandardowy. Proszę przesyłać rozwiązania w formacie .pdf – najlepiej w Latexu"""
+a.sorbian3@student.uw.edu.pl,5,"""1. OK
+3. Podpunkt a) dobrze."""
+d.spisak@student.uw.edu.pl,"4,3","""1. Błędy: kilka zgubionych minusów, źle rozwiązane drugie równanie
+3. BR
+4. a) Pan podaje odrazu odpowiedź i ona jest błędna. To jest pewnie wynik nie poprawnie przepisanego polecenia. Wektor (0,3,1, -2) należy do W a nie (0,3,-1,-2). b) Ma Pan rację z tym, że w koniec końców V = W, ale nie wiem czy to jest jakaś ważąca cześć rozwiązania. Nie widzę, żeby Pan zauważył, że wymiar V nie może być równy 3, albo wyraźnie o tym napisał, ponieważ wtedy by Pan dostał, że a musi być równe 3. c) dwie uwagi. Pierwsza: nie ma argumentacji. Druga: chyba polecenie wymaga jednego wektora na wszystkie możliwe a. 
+5. Co to znaczy “analogicznie” w podpunkcie a)? Przecież w zadaniu 4 I 5 są zupełnie różne przestrzenie… Poza tym wypisane równania nie opisują przestrzeni V – łatwo to sprawdzić podstawiając któryś z wektorów bazowych do równań. Podobnie w podpunkcie b) wypisane wyniki bez obliczeń są niepoprawne. Punkt c) ok
+7. poprawnie, duży + za spisywanie w texu"""
+s.sroka2@student.uw.edu.pl,"8,5","""1. OK
+3. W a) są błędy rachunkowe, przez co baza jest źle wyznaczona.
+4. OK
+5. W podpunkcie a) macierze wyszły dobre, ale ich interpretacja jest inna – wiersze macierzy to wektory rozpinające V, a nie równania które ją opisują. Podpunkt b) wygląda ok (Choć wymiar przecięcia V i Z wyszedł zły ze względu na błąd w poprzednim podpunkcie). W podpunkcie c) błąd analogiczny do podpunktu a), ale pomysł na rozwiązanie dobry + wyznaczenie warunku na zawieranie się W w Z rozwiązane poprawnie."""
+k.stankiewi4@student.uw.edu.pl,0,"""3. BR"""
+n.stark@student.uw.edu.pl,"9,5","""1. OK
+3. Dobrze
+4. Bardzo dobre rozwiązanie
+6. w b) brakuje jednoznaczności """
+aj.stefansk3@student.uw.edu.pl,0,"""3. BR"""
+t.stepkowski@student.uw.edu.pl,0,"""3. BR"""
+k.sulik2@student.uw.edu.pl,8,"""1. OK
+3. W b) mimo tego co Pan napisał, nie są uwzględnione warunki zadania.
+4. OK
+5. W podpunkcie a) macierze wyszły dobre, ale ich interpretacja jest inna – wiersze macierzy to wektory rozpinające V, a nie równania które ją opisują. W podpunkcie b) wymiar przecięcia zależy od a – dim(V+W) został obliczony poprawnie, jednak wymiar V zależy od a (Bo zmienia się liczba równań opisujących V) Podpunkt c) ok
+6. ok"""
+bp.swiderski@student.uw.edu.pl,"6,5","""3. W a) są błędy rachunkowe, przez co baza jest źle wyznaczona.
+4. OK
+6. a) ok"""
+k.synowiec@student.uw.edu.pl,2,"""1. OK
+3. BR"""
+j.szczechla@student.uw.edu.pl,"8,5","""1. a) OK b) w drugim przypadku jest o jeden wektor za dużo: x_4 i x_5 są polączone drugim równaniem
+3. W a) są błędy rachunkowe, przez co baza jest źle wyznaczona.
+4. a), b) OK c) dlaczego nie jest podany żaden wektor? 
+5. Ładne rozwiązanie! W podpunkcie b) oba podejścia wyglądają dobrze."""
+d.szczecinsk@student.uw.edu.pl,9,"""1. a) OK, ale przydałoby się jasne stwierdzenie, że układ zawsze ma rozwiązania b) przypadki powinny być zamienione; warunek $s\neq0$ nie jest potrzebny - chyba skutek literówki przy przepisywaniu
+3. Dobrze
+4. Bardzo dobre rozwiązanie. """
+ws.szczerba@student.uw.edu.pl,"3,5","""1. a) OK b) przypadki powinny być zamienione i wydaje mi się, że wkradły się pewne blędy rachunkowe, z braku pokazanych rachunków nie wskarzę gdzie
+3. BR
+4. OK
+5. W podpunkcie a) mała pomyłka obliczeniowa (Przy obliczaniu w2+3w3). W podpunkcie b) skąd się bierze dim(V)=2 dla a=-3? Czy w podpunkcie a) nie wyszło właśnie, że w tym wypadku dim(V)=3? Nie widzę też odpowiedzi do podpunktów b,c)."""
+m.szelag10@student.uw.edu.pl,"6,9","""1. a) błędy rachunkowe, układ nigdy nie jest sprzeczny b) dla błędnej macierzy z a) bazy się zgadzają
+3. Dobrze
+4. a), b) Ok c) nie znalazłem"""
+jr.szewczyk2@student.uw.edu.pl,"6,3","""1. OK
+2. zła kolejność przy wyznaczaniu D przez to otrzymany zbiór nie jest szukanym zbiorem
+3. Dobrze
+4. a) OK b) shodkowanie macierzy zawiera błędy, skąd odpowiedź nie jest prawdziwa(b=-2, powinno b=-1). c) OK"""
+w.szuminski@student.uw.edu.pl,"5,4","""2. dobre wyniki, zły rysunek zbioru D
+3. W b) baza jest źle wyznaczona.
+4. OK"""
+tomek.szymanderski@gmail.com,"1,5","""1. Błąd rachunkowy: powinno wyjść $s + 7$, do tego zniknął jeden minus
+3. BR"""
+hm.szymanski@student.uw.edu.pl,"9,5","""1. OK
+3. Dobrze
+4. Przez przypadek wziął Pan wektory z zadania 5 co spowodowało kompletnie inne rachunki w punktach a,b. Z racji tego, że dla wybranych przez Pana danych startowych rachunki są ok, obniażam tylko 0,5 
+5. Ładne rozwiązanie!"""
+l.szymanski8@student.uw.edu.pl,8,"""1. OK
+3. Podpunkt a) dobrze.
+4. OK
+6. a) ok"""
+h.szymaszek@student.uw.edu.pl,7,"""1. a) OK b) wiersze macierzy układu jednorodnego nie stanowią bazy przestrzeni jego rozwiązań, należy jeszcze rozwiązać ten układ. W pierwszym przypadku s=-7 powinny być 3 wektory bazowe, a w drugim 2.
+3. Dobrze
+4. a) Wektory z W nie spełniają znalezionego układu. b) OK c) Jaka jest argumentacja? 
+5. W podpunkcie a) jakiś drobny błąd obliczeniowy w przypadku a=-3 – wektor (1,5,3,0) nie spełnia pierwszego równania. W podpunkcie b) dim(V+W) wyznaczone poprawnie, ale należało jeszcze obliczyć wymiar przecięcia V i Z. Punkt c) ok."""
+d.szynkarewi@student.uw.edu.pl,"6,5","""1. a) OK b) wiersze macierzy układu jednorodnego nie stanowią bazy przestrzeni jego rozwiązań, należy jeszcze rozwiązać ten układ. W pierwszym przypadku s=-7 powinny być 3 wektory bazowe, a w drugim 2.
+3. W b) baza jest podana tylko dla jednego przypadku, i błędnie.
+4. Pani rozwiązuje dobrze, ale dlaczego tak krótko? W punkcie c sama odpowiedź, to za mało
+5. Metoda rozwiązania podpunktu a) ok, choć trafiły się błęd obliczeniowe"""
+j.tabasz@student.uw.edu.pl,10,"""1. OK
+3. Dobrze
+4. OK
+7. ok"""
+b.tarnowski@student.uw.edu.pl,0,"""3. BR"""
+a.tobjasz2@student.uw.edu.pl,9,"""1. OK
+3. W a) \beta-\alpha_3 nie należy do V.
+4. Bardzo dobre rozwiązanie
+5. Podpunkt a) ok w podpunkcie b) przy obliczaniu wymiaru przecięcia V i W nie wystarczy sprawdzić, czy wektory bazy V należą do W – bo także jakaś ich kombinacja liniowa mogłaby należeć do W. Punkt c) ok"""
+j.trzop@student.uw.edu.pl,0,"""3. BR"""
+m.urbanska18@student.uw.edu.pl,0,"""3. BR"""
+ma.wagrodzki@student.uw.edu.pl,2,"""1. OK
+3. BR"""
+aj.warno@student.uw.edu.pl,"7,5","""1. a) OK b) drobne błędy przy przepisywaniu iczb
+3. W b) nie ma wyznaczonego zbioru wartości t. W wyznaczonej bazie wektor \alpha_1 nie jest w V.
+4. b) Naodwrót: układ jest niesprzęczny tylko gdy b=-1 c) Pani wypisała warunki i zostało podać wektor, dlaczego go nie ma. 
+5. W podpunkcie a) drobna pomyłka obliczeniowa (Przy trzecim przejściu między macierzami w drugim wierszu), jednak ogólnie metoda wyznaczenia równań poprawna. Podpunkt b) ok (Wyniki wyszły złe, ale to przez błąd w podpunkcie a))"""
+z.waszczuk2@student.uw.edu.pl,"4,5","""3. BR
+4. a) Domyslam się, że kiedy Pani przechodziła od macierzy do wyznaczenia równań na współczynniki, wtedy zgubił się minus w pierwszym równaniu, z czego układ opisujący W wyszedł nie do końca poprawny. b) Nie przeanalizowała Pani, że gdy a jest różne od 3 to wymiar V wynosi 3 i nie może wtedy V zawierać się w dwumiarowej przestrzeni W. 
+5. Podpunkt a) dotyczył przestrzeni V, nie W. W podpunkcie b) niepoprawne wyniki, oraz niestety niezrozumiałe dla mnie obliczenia. Proszę zauważyć, że w tym podpunkcie nie mogło wyjść dim(V+W)=0 chociażby dlatego, że V jest niezerowa… Brak podpunktu c)
+6. w a) brakuje uzasadnienia że \alpha jest wielokrotnością 2\pi, dlatego 0,5, w b) nie ma jednoznaczności więc też 0,5"""
+kw448752@students.mimuw.edu.pl,0,"""3. BR"""
+mp.wesolows2@student.uw.edu.pl,0,"""3. BR"""
+mj.wieclaw@student.uw.edu.pl,2,"""1. OK
+3. BR"""
+pw448541@students.mimuw.edu.pl,"1,5","""3. W b) wektor \alpha_1 nie jest w V."""
+p.wielgolews@student.uw.edu.pl,0,"""3. BR"""
+pe.wojtas@student.uw.edu.pl,9,"""1. a) Dlaczego? b) OK
+3. (v_1,v_2,v_3) to nie jest oznaczenie na przestrzeń, tylko układ wektorów. W b) obliczenia są bardzo nieczytelne. Nie wiadomo skąd się wzięło X, Y, Z, oraz wektor (0,0,0,1).
+4. strona 10, linijka 6: nie jest oczywiste dla czytelnika drugie przejście. c) Dlaczego tylko przypadek a=3? 
+5. Podpunkty a,b) ok. W podpunkcie c) dla b=2 W jest zawarte w Z (W przeciwieństwie do tego co Pan napisał), ale to chyba tylko pomyłka obliczeniowa…"""
+b.wojtowicz3@student.uw.edu.pl,0,"""3. BR"""
+m.wrona13@student.uw.edu.pl,0,"""3. BR"""
+mp.wrzesinsk@student.uw.edu.pl,0,"""3. BR"""
+d.wyrzykows2@student.uw.edu.pl,"9,5","""3. Z t=0 nie wynika \beta=(0,0,1,0).
+4. OK
+6. ok
+7. strzelanie z armaty do wróbli, ale poprawnie"""
+p.wyzinski@student.uw.edu.pl,"8,5","""1. a) OK b) gdzie jest drugi przypadek?
+3. W a) są błędy rachunkowe, przez co baza jest źle wyznaczona.
+4. OK
+5. Podpunkty a,b) ok. W podpunkcie c) przestrzeń zerowa nie znaczy pusta – należało sprawdzić, że przecięcie W i Z ma wymiar większy od 0. Co do zawierania się W w Z – metoda ok, ale tylko dlatego, że Z da się opisać jednym równaniem – gdyby równań było więcej, to mogłoby być się zdarzyć że dla dowolnego b równanie z przestrzeni W nie jest żadnym z równań opisujących Z, a mimo to W zawierałoby się w Z."""
+mj.zakowicz@student.uw.edu.pl,"9,1","""1. OK
+3. Dobrze
+4. a) Jest błąd rachunkowy, gdy od linijki x4 = -2x3 + (8+b)x1 wyszlo Panu (b+8)x1 + 2x3 + x4 = 0. b) Niepoprawny układ prowadzi do tego, że pomyslowo poprawne podstawienia rachunkowo były błędne. 
+6. w a) rozwiązanie równości jest bardzo nieuzasadnione, chociaż poprawne """
+lp.zalewski2@student.uw.edu.pl,"7,3","""1. OK - aż taka ilość tekstu jest niepotrzebna, zazwyczaj warto też pominąć powtarzanie tych samych rachunków 4 razy.
+2.  W a) podniesienie nierówności stronami do kwadratu nie daje równoważnej nierówności
+3. Dobrze
+4. OK
+5. W podpunkcie a), w przypadku gdy a=-3 jeszcze jeden wiersz macierzy się zeruje I dostajemy drugie równanie. W podpunkcie b) przy wyznaczaniu przecięcia V z Z nie wystarczy sprawdzić, czy wektory bazy V nie należą do Z – jakieś inne kmbinacje liniowe tych wektorów mogą należeć do Z (Tak się w istocie dzieje – uzyskane Pana sposobem wymiary w obu przypadkach są nieprawidłowe) Punkt c) ok"""
+si.zapala@student.uw.edu.pl,"7,5","""3. W b) baza jest wyznaczona tylko dla jednego przypadku, poza tym błędnie.
+4. Wzorcowe rozwiązane
+5. Ładne rozwiązanie!"""
+k.zaremski@student.uw.edu.pl,0,"""3. BR"""
+bz448593@students.mimuw.edu.pl,0,"""3. BR"""
+m.zmuda6@student.uw.edu.pl,"6,1","""1. a) OK b) błędy rachunkowe, poważne
+3. W b) nie ma podanej bazy R^4.
+4. a) Układ, który Pan podał jest niejednorodny. Rozwiązania takiego układu nie tworzą przestrzeni liniowej. b) Rachunki, które Pan prowadzi po shodkowaniu macierzy nie są wyjaśnione. """
+m.znamierow2@student.uw.edu.pl,"1,5","""1. a) OK b) W drugim przypadku powinny wyjść dwa wektory, (0,1,0,0,0) nie może należeć do bazy, jeśli x_2 = 0. Prawy margines był też bardzo śłabo widoczny, a chowały się tam najważniejsze współczynniki.
+3. BR"""

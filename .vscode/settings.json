@@ -61,5 +61,6 @@
     "ostream": "cpp",
     "stdint.h": "c",
     "random": "c"
-  }
+  },
+  "C_Cpp.errorSquiggles": "enabled"
 }
