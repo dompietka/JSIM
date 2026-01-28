@@ -1,6 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
-from pytong.wiki_project.scraper.wikiarticle import WikiArticle
 
 class WikiFetcher:
     def __init__(self, base_url, use_local_file=False):
@@ -39,4 +37,4 @@ class WikiFetcher:
             except requests.RequestException as e:
                 print(f"Network error: {e}")
                 return None
-        return WikiArticle(html_content)
+        return html_content

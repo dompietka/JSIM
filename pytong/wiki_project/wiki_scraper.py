@@ -1,41 +1,43 @@
 # wiki_scraper.py
 import argparse
 import sys
-from scraper.wikiscraper import WikiScraper
+from scraper.wikicontroller import WikiController
 
 # Stała konfiguracja dla Bulbapedii
-BULBAPEDIA_URL = "https://bulbapedia.bulbagarden.net/wiki/"
+ONE_WIKI_TO_RULE_THEM_ALL_URL = "https://lotr.fandom.com/wiki/"
 
 def main():
-    parser = argparse.ArgumentParser(description="WikiScraper - pobieranie i analiza danych z Wiki.")
+    parser = argparse.ArgumentParser(description="WikiScraper - data extraction and analysis from wikis.")
     
-    # Argument: --summary
-    parser.add_argument('--summary', type=str, help='Pobiera i wyświetla pierwszy paragraf artykułu dla podanej frazy.')
-    
-    # Tutaj w przyszłości dodamy kolejne argumenty (--table, --count-words itp.)
+    parser.add_argument('--url', type=str, help='base URL of the wiki to scrape (default: one wiki to rule them all)', default=ONE_WIKI_TO_RULE_THEM_ALL_URL)
+    modes = parser.add_mutually_exclusive_group(required=True)
 
+    modes.add_argument("--summary", metavar='"PHRASE"', type=str, help="get first paragraph summary of the article for the given phrase")
+    modes.add_argument("--table", metavar='"PHRASE"', type=str, help="extract table data from the article for the given phrase and save as CSV")
+    modes.add_argument("--count-words", metavar='"PHRASE"', type=str, help="Count words in article and update word-counts.json")
+    modes.add_argument("--analyze-relative-word-frequency", action="store_true", help="Analyze relative word frequency vs wiki language")
+    modes.add_argument("--auto-count-words", metavar='"PHRASE"', type=str, help="Automatically crawl linked articles and count words")
+
+    parser.add_argument("--number", type=int, default=1, help="Table number (starting from 1)")
+    parser.add_argument("--first-row-is-header", action="store_true", help="Treat first row of table as header")
+
+    parser.add_argument("--mode", choices=["article", "language"], help="Sorting mode for frequency analysis")
+    parser.add_argument("--count", type=int, help="Number of words to include in analysis")
+    parser.add_argument("--chart", type=str, help="Path to save bar chart image")
+
+    parser.add_argument("--depth", type=int, help="Crawling depth")
+
+    parser.add_argument("--wait", type=float, default=1.0, help="Seconds to wait between requests")
+    
     args = parser.parse_args()
 
-    # Inicjalizacja środowiska
-    scraper = WikiScraper(base_url=BULBAPEDIA_URL)
+    # Tworzymy kontroler przekazując mu argumenty
+    app = WikiController(args)
+    app.run()
 
-    if args.summary:
-        phrase = args.summary
-        print(f"Fetching summary for: {phrase}...")
-        
-        article = scraper.scrape(phrase)
-        
-        if article:
-            summary = article.get_summary()
-            print("-" * 40)
-            print(summary)
-            print("-" * 40)
-            
-            # Licencja (wymóg zadania)
-            print(f"Wyjście programu na licencji BY-NC-SA stworzone na podstawie artykułu dostępnego na stronie {BULBAPEDIA_URL}{phrase.replace(' ', '_')}")
+    print(f"Wyjście programu na licencji BY-SA stworzone na podstawie artykułu dostępnego na stronie {args.url.replace(' ', '_')}")
     
-    else:
-        parser.print_help()
 
 if __name__ == "__main__":
     main()
+    
