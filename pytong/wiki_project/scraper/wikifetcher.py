@@ -1,15 +1,16 @@
 import requests
 
 class WikiFetcher:
-    def __init__(self, base_url, use_local_file=False):
+    def __init__(self, base_url, phrase, use_local_file=False):
         self.base_url = base_url
+        self.phrase = phrase
         self.use_local_file = use_local_file #czytanie z pliku lokalnego, do testowania offline
 
-    def _get_url(self, phrase): #zamienia spacje na podlogi
-        safe_phrase = phrase.replace(" ", "_")
+    def _get_url(self): #zamienia spacje na podlogi
+        safe_phrase = self.phrase.replace(" ", "_")
         return f"{self.base_url}{safe_phrase}"
 
-    def scrape(self, phrase, local_file_path=None):
+    def scrape(self, local_file_path=None):
         html_content = "" #string
 
         if self.use_local_file:
@@ -22,18 +23,27 @@ class WikiFetcher:
                 print(f"Error: File {local_file_path} not found.")
                 return None
         else:
-            url = self._get_url(phrase)
+            url = self._get_url()
             try:
-                headers = {'User-Agent': 'Wikiscraper: University Project'}
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/119.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                    "Accept-Language": "en-US,en;q=0.5",
+                    "Referer": "https://lotr.fandom.com/",
+                    "Connection": "keep-alive"
+}
+
                 response = requests.get(url, headers=headers) #wysyla zapytanie HTTP GET 
                 
                 if response.status_code == 404:
-                    print(f"Error: Article '{phrase}' not found (404).")
+                    print(f"Error: Article '{self.phrase}' not found (404).")
                     return None
                 
                 response.raise_for_status() #inne bledy HTTP
                 html_content = response.text
-                
+                  
             except requests.RequestException as e:
                 print(f"Network error: {e}")
                 return None

@@ -1,0 +1,247 @@
+@font-face {
+     font-family: Max Sans;
+     src: url("MaxSans-Bold.woff2");
+     font-weight: 700;
+     font-style: normal;
+}
+@font-face {
+     font-family: Max Sans;
+     src: url("MaxSans-Regular.woff2");
+     font-weight: 400;
+     font-style: normal;
+}
+@font-face {
+     font-family: Max Sans;
+     src: url("MaxSans-Demi.woff2");
+     font-weight: 600;
+     font-style: normal;
+}
+
+white {
+     font-weight: 700;
+     color: #FFFFFF;
+}
+blue {
+     font-weight: 700;
+     color: #8298AB;
+}
+
+.fullSize {left:0px;top:0px;width: 970px;height: 250px;}
+.abs { position: absolute; }
+.rel { position: relative; }
+.flexCenter { display:flex; align-items: center; justify-content: center; }
+.flexBottom { display:flex; align-items: flex-end; justify-content: center; }
+.col { flex-direction: column; }
+.imgs { width: 100%; height: 100%; }
+.cover { object-fit: cover; }
+.contain { object-fit: contain; }
+.fill { object-fit: fill; }
+
+/********************* FULL BLEED IMAGE **********************/
+#fullBleedBG { 
+     display: none;
+}
+
+/*********************** FREE ELEMENTS ***********************/
+#keyartContainer {
+     left: -245px;
+     top: -195px;
+     width: 1214px;
+     height: 641px;
+}
+#titleTextContainer {
+     left: 10px;
+     top: 223px;
+     width: 167px;
+     height: 20px;
+     display: flex;
+     align-items: flex-end;
+}
+#titleText {
+     color: #FFF;
+     font-family: Max Sans;
+     font-size: 10px;
+     font-weight: 600;
+     line-height: 1em;
+     letter-spacing: 0.05em;
+}
+#cornerLogo {
+     left: 10px;
+     top: 10px;
+     width: 62px;
+     height: 24px;
+}
+
+/*********************** GRADIENTS ***********************/
+#topGrad {
+     left: -33px;
+     top: 32px;
+     width: 250px;
+     height: 185px;
+     rotate: -90deg;
+}
+#bottomGrad {
+     left: 576px;
+     top: -145px;
+     width: 250px;
+     height: 540px;
+     rotate: -90deg;
+}
+
+/************************ STACK *************************/
+#stackContainer {
+     left: 697px;
+     top: 23px;
+     width: 225px;
+     height: 195px;
+}
+#heroTextContainer {
+     width: 210px;
+}
+#heroText {
+     color: #FFF;
+     font-family: Max Sans;
+     font-size: 14px;
+     font-weight: 600;
+     text-align: center;
+     letter-spacing: 0.0005em;
+     line-height: 1.05em;
+}
+#heroText live {
+     display: inline-block;
+     background-color: #F60301;
+     color: white;
+     position: relative;
+     font-weight: 700;
+     font-size: 0.59em;
+     border-radius: 0.1em;
+     padding: 0.25em 0.25em 0.074em;
+     top: -0.22em;
+     letter-spacing: 0.02em;
+     line-height: 0.81;
+}
+#hboMaxLogo {
+     display: block;
+     margin-top: 6px;
+     width: 114px;
+     height: 85px;
+}
+#stackLogo {
+     display: none;
+     margin-top: 7px;
+     width: 175px;
+     height: 73px;
+}
+#dynamicLogoContainer {
+     display: none;
+     margin-top: 7px;
+     width: 197px;
+     height: 85px;
+}
+#ctaContainer {
+     margin-top: 10px;
+     height: 26px;
+     padding: 9px 11px;
+     border-radius: 4px;
+}
+
+#ctaContainer.macSafari {
+     margin-top: 10px;
+     height: 26px;
+     padding: 9px 11px;
+     border-radius: 4px;
+}
+
+#ctaContainer.winChrome {
+     margin-top: 10px;
+     height: 26px;
+     padding: 9px 11px;
+     border-radius: 4px;
+}
+
+#ctaContainer.winFirefox {
+     margin-top: 10px;
+     height: 26px;
+     padding: 9px 11px;
+     border-radius: 4px;
+}
+
+#cta {
+     width: max-content;
+     color: #FFFFFF;
+     text-align: center;
+     font-family: Max Sans;
+     font-size: 10px;
+     font-weight: 600;
+     line-height: 1em;
+     letter-spacing: 0.18em;
+}
+#secondaryText {
+     margin-top: 9px;
+     width: 100%;
+     color: #8298AB;
+     text-align: center;
+     font-family: Max Sans;
+     font-size: 14px;
+     font-weight: 600;
+     line-height: 1.05em;
+     letter-spacing: 0.05em;
+}
+
+/********************** COPYRIGHT **********************/
+#copyrightContainer {
+     left: 222px;
+     top: 232px;
+     width: 282px;
+     height: 16px;
+     /* transform: rotate(-90deg); */
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+#copyright {
+     width: 100%;
+     color: #FFF;
+     text-align: center;
+     font-family: Max Sans;
+     font-size: 8px;
+     font-weight: 400;
+     line-height: 1.05em;
+     letter-spacing: 0.02em;
+}
+
+/*********************** LEGAL ***********************/
+#legalContainer {
+     position: absolute;
+     top: 232px;
+     width: 281px;
+     left: 669px;
+}
+#legal {
+     width: 290px;
+     height: 16px;
+     color: #FFF;
+     text-align: center;
+     font-family: Max Sans;
+     font-size: 8px;
+     font-weight: 400;
+     letter-spacing: 0.02em;
+}
+#legal span { line-height: 1em; }
+
+#black{
+     display: none;
+     position: absolute;
+     width: 484px;
+     height: 250px;
+     right: 0;
+     bottom: 0;
+     background: #000000;
+}
+
+#heroText live.macSafari {
+     padding: 0.3em 0.25em 0.068em;
+     top: -0.27em;
+     letter-spacing: 0.02em;
+     line-height: 0.8;
+}
