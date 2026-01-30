@@ -28,7 +28,7 @@ class WikiController:
             
         DISPATCH = {
             "summary": lambda: article.get_summary(),
-            "table": lambda: article.get_table(table_number=self.args.number, first_row_is_header=self.args.first_row_is_header),
+            "table": lambda: article.get_table(phrase=self.phrase, table_number=self.args.number, first_row_is_header=self.args.first_row_is_header, first_column_is_not_index=self.args.first_column_is_not_index),
             "count_words": lambda: article.count_words(),
             "analyze_relative_word_frequency": lambda: article.analyze_relative_word_frequency(),
             "auto_count_words": lambda: article.auto_count_words()
@@ -37,6 +37,8 @@ class WikiController:
         for name, value in vars(self.args).items():
             if name in DISPATCH and value is not None:
                 print(f"tryb: {name}, fraza: {value}")
-                DISPATCH[name]()
+                res = DISPATCH[name]()
                 break
+        
+        print(res)     
                 

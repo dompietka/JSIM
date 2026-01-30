@@ -4,12 +4,12 @@ import sys
 from scraper.wikicontroller import WikiController
 
 # Stała konfiguracja dla Bulbapedii
-ONE_WIKI_TO_RULE_THEM_ALL_URL = "https://lotr.fandom.com/wiki/"
+UNCYCLOPEDIA = "https://uncyclopedia.com/wiki/"
 
 def main():
     parser = argparse.ArgumentParser(description="WikiScraper - data extraction and analysis from wikis.")
     
-    parser.add_argument('--url', type=str, help='base URL of the wiki to scrape (default: one wiki to rule them all)', default=ONE_WIKI_TO_RULE_THEM_ALL_URL)
+    parser.add_argument('--url', type=str, help='base URL of the wiki to scrape (default: uncyclopedia)', default=UNCYCLOPEDIA)
     modes = parser.add_mutually_exclusive_group(required=True)
 
     modes.add_argument("--summary", metavar='"PHRASE"', type=str, help="get first paragraph summary of the article for the given phrase")
@@ -20,6 +20,7 @@ def main():
 
     parser.add_argument("--number", type=int, default=1, help="Table number (starting from 1)")
     parser.add_argument("--first-row-is-header", action="store_true", help="Treat first row of table as header")
+    parser.add_argument("--first-column-is-not-index", action="store_true", help="Do not treat first column of table as index")
 
     parser.add_argument("--mode", choices=["article", "language"], help="Sorting mode for frequency analysis")
     parser.add_argument("--count", type=int, help="Number of words to include in analysis")
@@ -37,7 +38,7 @@ def main():
     app = WikiController(args)
     app.run()
 
-    print(f"Wyjście programu na licencji BY-SA stworzone na podstawie artykułu dostępnego na stronie {args.url.replace(' ', '_')}")
+    print(f"Wyjście programu na licencji CC-BY-SA stworzone na podstawie artykułu dostępnego na stronie {args.url.replace(' ', '_')}")
 
 if __name__ == "__main__":
     main()
