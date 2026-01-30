@@ -10,7 +10,7 @@ class WikiFetcher:
         safe_phrase = self.phrase.replace(" ", "_")
         return f"{self.base_url}{safe_phrase}"
 
-    def scrape(self, local_file_path=None):
+    def get_html(self, local_file_path=None):
         html_content = "" #string
 
         if self.use_local_file:
@@ -21,7 +21,7 @@ class WikiFetcher:
                     html_content = f.read()
             except FileNotFoundError:
                 print(f"Error: File {local_file_path} not found.")
-                return None
+                return None 
         else:
             url = self._get_url()
             try:
