@@ -4,6 +4,7 @@ from scraper.wikicontroller import WikiController
 # Stała konfiguracja dla uncyclopedii
 UNCYCLOPEDIA = "https://uncyclopedia.com/wiki/"
 
+
 def main():
     parser = argparse.ArgumentParser(
         description="WikiScraper - data extraction and analysis from wikis."
