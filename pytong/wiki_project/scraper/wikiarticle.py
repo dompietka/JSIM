@@ -24,7 +24,16 @@ class WikiArticle:
         return content_div
     
     def _get_links_from_content(self, content_div):
-        return
+        skip_prefixes = ("File:", "Category:", "Template:", "Special:", "Help:", "Talk:", f"{self.phrase}")
+        links = []
+        for link in content_div.find_all('a', href=True):
+            href = link['href']
+            if href.startswith('/wiki/'):
+                title = href.split('/wiki/', 1)[1]
+                if not any(title.startswith(p) for p in skip_prefixes):
+                    links.append(title)
+        return links
+    
 
     def get_summary(self):
         content_div = self._get_content_div()

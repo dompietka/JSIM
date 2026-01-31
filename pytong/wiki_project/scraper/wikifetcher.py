@@ -1,16 +1,15 @@
 import requests
 
 class WikiFetcher:
-    def __init__(self, base_url, phrase, use_local_file=False):
+    def __init__(self, base_url, use_local_file=False):
         self.base_url = base_url
         self.use_local_file = use_local_file #czytanie z pliku lokalnego, do testowania offline
 
-    def _get_url(self): #zamienia spacje na podlogi
-        safe_phrase = self.phrase.replace(" ", "_")
+    def _get_url(self, phrase): #zamienia spacje na podlogi i skleja z baza URL
+        safe_phrase = phrase.replace(" ", "_")
         return f"{self.base_url}{safe_phrase}"
 
     def get_html(self, phrase, local_file_path=None):
-        self.phrase = phrase
         html_content = "" #string
 
         if self.use_local_file:
@@ -23,15 +22,15 @@ class WikiFetcher:
                 print(f"Error: File {local_file_path} not found.")
                 return None 
         else:
-            url = self._get_url()
+            url = self._get_url(phrase)
             try:
                 headers = {
-                    "User-Agent": "uni project-wiki-scraper "}
+                    "User-Agent": "uni-project-wiki-scraper "}
 
                 response = requests.get(url, headers=headers) #wysyla zapytanie HTTP GET 
                 
                 if response.status_code == 404:
-                    print(f"Error: Article '{self.phrase}' not found (404).")
+                    print(f"Error: Article '{phrase}' not found (404).")
                     return None
                 
                 response.raise_for_status() #inne bledy HTTP
