@@ -126,6 +126,7 @@ class WikiArticle:
             return f"Error saving JSON file: {e}, Article word count: {word_count}, unique words: {words_used}."
 
         return f"Article word count: {word_count}, unique words: {words_used}, word-counts.json updated successfully."
+    
 
 
 

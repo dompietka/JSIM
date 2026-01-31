@@ -31,6 +31,7 @@ def main():
     parser.add_argument("--wait", type=float, default=1.0, help="Seconds to wait between requests")
 
     parser.add_argument("--use-local-file", metavar="FILE_PATH", type=str, help="Use local HTML file for testing instead of making HTTP requests")
+    parser.add_argument("--language", type=str, help="Language code for frequency analysis (default: 'en')")
 
     args = parser.parse_args()
 

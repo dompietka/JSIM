@@ -2,6 +2,8 @@ import argparse
 import sys
 from scraper.wikiarticle import WikiArticle
 from scraper.wikifetcher import WikiFetcher
+from scraper.wikianalyzer import analyze_relative_word_frequency
+
 
 class WikiController:
     def __init__(self, args):
@@ -14,7 +16,9 @@ class WikiController:
             else:
                 self.use_local_file = False
                 self.fetcher = WikiFetcher(base_url=args.url, phrase=self.phrase)
+                
 
+                
     def run(self):
         if self.args.use_local_file:
             html_content = self.fetcher.get_html(local_file_path=self.args.use_local_file)
@@ -30,7 +34,7 @@ class WikiController:
             "summary": lambda: article.get_summary(),
             "table": lambda: article.get_table(phrase=self.phrase, table_number=self.args.number, first_row_is_header=self.args.first_row_is_header, first_column_is_not_index=self.args.first_column_is_not_index),
             "count_words": lambda: article.count_words(),
-            "analyze_relative_word_frequency": lambda: article.analyze_relative_word_frequency(),
+            "analyze_relative_word_frequency": lambda: analyze_relative_word_frequency(self.args),
             "auto_count_words": lambda: article.auto_count_words()
         }
 
