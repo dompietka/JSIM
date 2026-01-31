@@ -8,8 +8,9 @@ import json
 import os 
 
 class WikiArticle:
-    def __init__(self, html_content):
+    def __init__(self, html_content, phrase=""):
         self.soup = BeautifulSoup(html_content, 'html.parser')
+        self.phrase = phrase
         
     def _get_content_div(self):
         content_div = self.soup.find('div', class_='mw-parser-output')
@@ -21,6 +22,9 @@ class WikiArticle:
         if not content_div:
             return None
         return content_div
+    
+    def _get_links_from_content(self, content_div):
+        return
 
     def get_summary(self):
         content_div = self._get_content_div()
@@ -126,6 +130,7 @@ class WikiArticle:
             return f"Error saving JSON file: {e}, Article word count: {word_count}, unique words: {words_used}."
 
         return f"Article word count: {word_count}, unique words: {words_used}, word-counts.json updated successfully."
+    
     
 
 

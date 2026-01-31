@@ -27,7 +27,6 @@ def main():
     parser.add_argument("--chart", type=str, help="Path to save bar chart image")
 
     parser.add_argument("--depth", type=int, help="Crawling depth")
-
     parser.add_argument("--wait", type=float, default=1.0, help="Seconds to wait between requests")
 
     parser.add_argument("--use-local-file", metavar="FILE_PATH", type=str, help="Use local HTML file for testing instead of making HTTP requests")

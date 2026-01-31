@@ -82,16 +82,3 @@ def analyze_relative_word_frequency(args):
             print(f"Error saving chart: {e}")
 
     return res.to_string(na_rep='')
-        
-        
-#plt.figure(figsize=(10, 6))
-#indices = np.arange(len(res))
-#bar_width = 0.3
-#plt.bar(indices, res["frequency_in_the_article"], bar_width, label='Frequency in Article', color='b')
-#plt.bar(indices + bar_width, res["frequency_in_wiki_language"], bar_width, label='Frequency in Wiki Language', color='r'
-#plt.xlabel('Words')
-#plt.ylabel('Frequency (per million words)')
-#plt.title('Relative Word Frequency Analysis')
-#plt.xticks(indices + bar_width / 2, res["word"], rotation=45)
-#plt.legend()
-#plt.tight_layout()

@@ -3,14 +3,14 @@ import requests
 class WikiFetcher:
     def __init__(self, base_url, phrase, use_local_file=False):
         self.base_url = base_url
-        self.phrase = phrase
         self.use_local_file = use_local_file #czytanie z pliku lokalnego, do testowania offline
 
     def _get_url(self): #zamienia spacje na podlogi
         safe_phrase = self.phrase.replace(" ", "_")
         return f"{self.base_url}{safe_phrase}"
 
-    def get_html(self, local_file_path=None):
+    def get_html(self, phrase, local_file_path=None):
+        self.phrase = phrase
         html_content = "" #string
 
         if self.use_local_file:
