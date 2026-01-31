@@ -5,7 +5,7 @@ from scraper.wikicontroller import WikiController
 UNCYCLOPEDIA = "https://uncyclopedia.com/wiki/"
 
 
-def main():
+def main(argss=None):
     parser = argparse.ArgumentParser(
         description="WikiScraper - data extraction and analysis from wikis."
     )
@@ -102,15 +102,16 @@ def main():
         help="Path to the JSON file for storing word counts (default: word-counts.json)",
     )
 
-    args = parser.parse_args()
-
-    # Tworzymy kontroler przekazując mu argumenty
+    args = parser.parse_args(argss)
     app = WikiController(args)
-    app.run()
-
-    print(
+    
+    if argss is None:  # wywołanie z terminala
+        print(app.run())
+        print(
         f"Wyjście programu na licencji CC-BY-SA stworzone na podstawie artykułu dostępnego na stronie {args.url.replace(' ', '_')}"
     )
+    return app.run()
+
 
 
 if __name__ == "__main__":

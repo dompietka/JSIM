@@ -34,7 +34,7 @@ class WikiController:
         if html_content:
             article = WikiArticle(html_content, phrase=self.phrase)
         else:
-            print(f"Could not retrieve content for '{self.phrase}'.")
+            return(f"Could not retrieve content for '{self.phrase}'.")
 
         DISPATCH = {
             "summary": lambda: article.get_summary(),
@@ -62,4 +62,4 @@ class WikiController:
                 res = analyze_relative_word_frequency(self.args)
                 break
 
-        print(res)
+        return(res)
