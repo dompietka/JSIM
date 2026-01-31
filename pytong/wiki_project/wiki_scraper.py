@@ -94,6 +94,13 @@ def main():
         action="store_true",
         help="Clear word-counts.json before counting words",
     )
+    
+    parser.add_argument(
+        "--json-path",
+        type=str,
+        default="word-counts.json",
+        help="Path to the JSON file for storing word counts (default: word-counts.json)",
+    )
 
     args = parser.parse_args()
 

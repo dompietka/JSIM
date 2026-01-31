@@ -20,9 +20,9 @@ class WikiController:
 
     def run(self):
         if self.args.clear_json:
-            with open("word-counts.json", "w") as f:
+            with open(self.args.json_path, "w") as f:
                 f.write("{}")  # Clear the file content
-            print("word-counts.json cleared.")
+            print(f"{self.args.json_path} cleared.")
 
         if self.args.use_local_file:
             html_content = self.fetcher.get_html(
@@ -44,7 +44,7 @@ class WikiController:
                 first_row_is_header=self.args.first_row_is_header,
                 first_column_is_not_index=self.args.first_column_is_not_index,
             ),
-            "count_words": lambda: article.count_words(),
+            "count_words": lambda: article.count_words(json_file=self.args.json_path),
             "auto_count_words": lambda: WikiBfs(
                 fetcher=self.fetcher,
                 phrase=self.phrase,

@@ -104,7 +104,7 @@ class WikiArticle:
         else:
             return value_counts.to_string(index=False)
 
-    def count_words(self):
+    def count_words(self, json_file="word-counts.json"):
         content_div = self._get_content_div()
         if not content_div:
             return "Error: Could not find content in the article."
@@ -135,7 +135,6 @@ class WikiArticle:
         word_count = sum(current_counts.values())
         words_used = len(current_counts)
 
-        json_file = "word-counts.json"
         total_counts = {}
 
         if os.path.exists(json_file):
@@ -154,4 +153,4 @@ class WikiArticle:
         except IOError as e:
             return f"Error saving JSON file: {e}, Article word count: {word_count}, unique words: {words_used}."
 
-        return f"Article word count: {word_count}, unique words: {words_used}, word-counts.json updated successfully."
+        return f"Article word count: {word_count}, unique words: {words_used}, {json_file} updated successfully."

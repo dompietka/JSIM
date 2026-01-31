@@ -7,7 +7,7 @@ import numpy as np
 
 def _normalize_zipf_freq(zipf_freq):
     if zipf_freq > 0:
-        return 10 ** (zipf_freq - 2)  # zipf -> na milion słów
+        return 10 ** (zipf_freq - 3)  # zipf -> na milion słów
     else:
         return float("nan")
 
@@ -25,11 +25,11 @@ def analyze_relative_word_frequency(args):
     if not mode or not count:
         return "Error: --mode and --count arguments are required for relative word frequency analysis."
 
-    with open("word-counts.json", "r", encoding="utf-8") as f:
+    with open(args.json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     if data is {}:
-        return "Error: no data in word-counts.json."
+        return f"Error: no data in {args.json_path}."
 
     total_words = sum(data.values())
 
@@ -88,9 +88,6 @@ def analyze_relative_word_frequency(args):
         plt.xlabel("Words")
         plt.ylabel("Frequency (per million words)")
         plt.title("Relative Word Frequency Analysis")
-
-        # Opcjonalnie: Skala logarytmiczna, jeśli różnice są ogromne
-        # plt.yscale('log')
 
         # Ustawienie etykiet na osi X
         plt.xticks(indices + bar_width / 2, plot_data["word"], rotation=45)
