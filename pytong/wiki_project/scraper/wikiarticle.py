@@ -31,7 +31,7 @@ class WikiArticle:
             "Special:",
             "Help:",
             "Talk:",
-            f"{self.phrase}",
+            self.phrase + "#",
         )
         links = []
         for link in content_div.find_all("a", href=True):
