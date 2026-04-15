@@ -62,5 +62,8 @@
     "stdint.h": "c",
     "random": "c"
   },
-  "C_Cpp.errorSquiggles": "enabled"
+  "C_Cpp.errorSquiggles": "enabled",
+  "python.analysis.extraPaths": [
+    "./pytong/wiki_project/scraper"
+  ]
 }

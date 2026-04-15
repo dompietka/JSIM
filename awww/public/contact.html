@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Contact Me</h1>
+
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <p>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">General</option>
+                    <option value="bug">Bug Report</option>
+                    <option value="feature">Feature Request</option>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <p>
+            <button type="submit">Send Message</button>
+        </p>
+
+    </form>
+</body>
+</html>

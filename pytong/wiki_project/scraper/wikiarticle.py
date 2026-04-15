@@ -87,7 +87,11 @@ class WikiArticle:
         except Exception as e:
             return f"Error parsing table: {e}"
 
-        filename = f"{phrase}.csv"
+
+        if ("/" not in phrase):
+            filename = f"{phrase}.csv"
+        else:
+            filename = "tabelka.csv"
         try:
             df.to_csv(filename)
             print(f"Data saved to file: {filename}")

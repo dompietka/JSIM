@@ -24,17 +24,7 @@ class WikiController:
                 f.write("{}")  # Clear the file content
             print(f"{self.args.json_path} cleared.")
 
-        if self.args.use_local_file:
-            html_content = self.fetcher.get_html(
-                phrase=self.phrase, local_file_path=self.args.use_local_file
-            )
-        else:
-            html_content = self.fetcher.get_html(phrase=self.phrase)
-
-        if html_content:
-            article = WikiArticle(html_content, phrase=self.phrase)
-        else:
-            return(f"Could not retrieve content for '{self.phrase}'.")
+        
 
         DISPATCH = {
             "summary": lambda: article.get_summary(),
@@ -55,6 +45,17 @@ class WikiController:
 
         for name, value in vars(self.args).items():
             if name in DISPATCH and value is not None:
+                if self.args.use_local_file:
+                    html_content = self.fetcher.get_html(
+                        phrase=self.phrase, local_file_path=self.args.use_local_file
+                    )
+                else:
+                    html_content = self.fetcher.get_html(phrase=self.phrase)
+
+                if html_content:
+                    article = WikiArticle(html_content, phrase=self.phrase)
+                else:
+                    return(f"Could not retrieve content for '{self.phrase}'.")
                 print(f"tryb: {name}, fraza: {value}")
                 res = DISPATCH[name]()
                 break
