@@ -1,0 +1,13 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome!</h1>
+
+    <p>
+        You have visited this page {{ visit_count }} time(s) this session.
+    </p>
+
+    <p>Server time: {{ server_time }}</p>
+{% endblock %}

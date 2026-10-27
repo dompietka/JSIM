@@ -1,0 +1,19 @@
+{
+  "name": "awww",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "npm run check && esbuild src/main.ts --bundle --outfile=dist/main.js --sourcemap",
+    "dev": "esbuild src/main.ts --bundle --outfile=dist/main.js --sourcemap --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "typescript": "^6.0.3"
+  },
+  "type": "commonjs"
+}

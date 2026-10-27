@@ -1,0 +1,29 @@
+{% extends "pages/base.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+    <h1>User Profile</h1>
+
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Joined:</strong> {{ user.date_joined|date:"d M Y" }}</p>
+    <p><strong>Staff:</strong> {{ user.is_staff }}</p>
+
+    <hr>
+
+    {% if user.is_staff %}
+    <p>
+        <a href="{% url 'blog:post-create' %}">+ Add new post</a>
+    </p>
+    {% endif %}
+
+    <form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+
+
+</form>
+
+{% endblock %}

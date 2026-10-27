@@ -1,0 +1,437 @@
+/* ── Reset ────────────────────────────────────────── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Design tokens ─────────────────────────────────── */
+:root {
+   /* --primary-color: #2c7be5;
+    --text-color:    #333;
+    --bg-color:      #f5f7fa; */
+    --font-main:     'Segoe UI', system-ui, sans-serif;
+    --spacing-md:    1rem;
+    --spacing-lg:    2rem;
+    --primary-color: #ff66a3;
+    --text-color: #4a2c3a;
+    --bg-color: lab(96.09% 6.06 -1.08);
+}
+
+body {
+    font-family: var(--font-main);
+    color: #4a2c3a;
+    background: #fff0f6; /* jasny róż */
+    font-size: 16px;
+    padding: var(--spacing-lg);
+
+    display: flex;              /* added */
+    flex-direction: column;     /* added — stacks h1 then everything else vertically */
+    align-items: center;        /* added — centers h1 horizontally */
+}
+
+/* Nagłówki */
+h1, h2, h3 {
+    color: #ff66a3;
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: 2.6rem;
+    text-align: center;         /* already there — this handles the text itself */
+    width: 100%;                /* added — ensures it stays full width for centering */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+/* Linki */
+a {
+    color: #ff4d94;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e60073;
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+header {
+    background: #ffb6d9;      
+    padding: 1rem 2rem;       
+    border-bottom: 3px solid #ff66a3;
+    width: 100vw;             /* full viewport width */
+}
+
+footer {
+    border-top: 3px solid #ff66a3;
+    padding: 1rem;
+    text-align: center;
+    background: #fff0f6;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;   /* added */
+}
+
+/* linki */
+nav a {
+    display: block;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #ff4d94;
+    background: #ffe3f1;
+    font-weight: bold;
+}
+
+/* hover efekt */
+nav a:hover {
+    background:#fcd4e8;
+    color:#e60073;
+}
+
+/* nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+    align-items: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: var(--primary-color);
+    color: #fff;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;    /* changed from row to column */
+    align-items: center;       /* centers children horizontally */
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    width: 100%;
+}
+
+.page-content {
+    width: 100%;
+    padding: var(--spacing-lg);
+}
+
+.page-content form {
+    width: 100%;
+    max-width: 100%;   /* remove the 600px limit */
+}
+
+article {
+    flex: 1;
+    background: #ffe6f0;
+    padding: var(--spacing-md);
+    border: 2px solid #ff99c8;
+    border-radius: 12px;
+}
+
+aside {
+    flex: 0 0 250px;
+    border-left: 3px solid #ff66a3;
+    padding-left: 1rem;
+    background: #fff0f6;
+    border-radius: 8px;
+}
+
+table.projects {
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+table.projects th,
+table.projects td {
+    padding: 0.5rem 1rem;           /* wewnętrzne odstępy */
+    text-align: left;
+}
+
+table.projects tr {
+    border-bottom: 2px solid #ff66a3; /* oddziela wiersze */
+}
+
+table.projects thead {
+    background: #ff99c8; /* naglowki */
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;   /* stack article + aside vertically */
+    }
+
+    aside {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;      /* center links on narrow screens */
+    }
+}
+
+
+
+
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+}
+
+.card {
+    border: 2px solid #ff99c8;                
+    border-radius: 16px;                   
+    padding: var(--spacing-md);
+    background: #ffe6f0;                      
+    box-shadow: 0 4px 10px rgba(255, 102, 163, 0.2); 
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);             
+    box-shadow: 0 8px 18px rgba(255, 102, 163, 0.3); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hover / efekt podświetlenia */
+aside details:hover {
+    background: #ffe6f0;
+    border-color: #ff4d94;
+}
+
+/* Styl dla summary */
+aside summary {
+    font-weight: 600;
+    cursor: pointer;
+    color: #e60073; /* ciemniejszy róż */
+    outline: none; /* usuwa domyślny focus outline w niektórych przeglądarkach */
+}
+
+/* Odstęp między summary a treścią po rozwinięciu */
+aside details[open] p {
+    margin-top: var(--spacing-md);
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: var(--spacing-md);
+    background: #ffe6f0;
+    border: 2px solid #ff99c8;
+    border-radius: 16px;
+    max-width: 500px;
+}
+
+form input[type="text"] {
+    padding: 0.6rem 1rem;
+    border: 2px solid #ff99c8;
+    border-radius: 12px;
+    background: #fff0f6;
+    color: #4a2c3a;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    outline: none;
+}
+
+form input[type="text"]:focus {
+    border-color: #ff4d94;
+    background: #fff;
+}
+
+form button[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    background: #ff66a3;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background: #e60073;
+}
+
+.entry-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.entry-list li {
+    background: #ffe6f0;
+    border: 2px solid #ff99c8;
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    color: #4a2c3a;
+}
+
+.entry-list li strong {
+    color: #ff4d94;
+}
+
+.blog-layout {
+    display: flex;
+    gap: var(--spacing-lg);
+    width: 100%;
+    align-items: flex-start;
+}
+
+.post-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;       /* bigger padding between posts */
+}
+
+.category-sidebar {
+    flex: 0 0 200px;
+    background: #ffe6f0;
+    border: 2px solid #ff99c8;
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    border-left: none;   /* overrides the existing aside style */
+}
+
+.category-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.category-sidebar ul li a {
+    display: block;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    color: #ff4d94;
+    font-weight: 500;
+}
+
+.category-sidebar ul li a:hover {
+    background: #fcd4e8;
+    color: #e60073;
+}
+
+.login-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.login-link small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+
+.user-nav form {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.user-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+}
+
+.user-greeting {
+    grid-column: 1 / -1;   /* spans both columns, stays on top */
+    text-align: center;
+    color: #ff4d94;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+
+.logout-btn {
+    font-size: 0.3rem;    /* tiny */
+    padding: 0.01rem 0.1rem;
+    background: #ffb6d9;
+    color: #4a2c3a;
+    border: 1px solid #ff99c8;
+    border-radius: 8px;
+    cursor: pointer;
+    width: auto;
+}
+
+.logout-btn:hover {
+    background: #fcd4e8;
+}
+
+.focused {
+    outline: 2px solid steelblue;
+    outline-offset: 4px;
+}
+
+mark {
+    background-color: #afd3ff;
+    color: inherit;
+    padding: 0 2px;
+    border-radius: 3px;
+}

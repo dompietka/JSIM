@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %} — MyApp</title>
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            {#<a href="{% url 'greet' %}">Greet</a>#}
+            <a href="{% url 'projects' %}">Projects</a>
+            <a href="{% url 'blog:post-list' %}">Blog</a>
+            {% if user.is_authenticated %}
+            <div class="user-nav">
+                <span class="user-greeting">Hello, {{ user.username }}</span>
+                <a href="{% url 'profile' %}">Profile</a>
+                <form method="POST" action="{% url 'logout' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="logout-btn">Logout</button>
+                </form>
+            </div>
+            {% else %}
+            <a href="{% url 'login' %}" class="login-link">
+                <span>Login</span>
+                <small>or register</small>
+            </a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>{% block footer_text %}© 2025 My Site{% endblock %}</p>
+    </footer>
+</body>
+</html>
